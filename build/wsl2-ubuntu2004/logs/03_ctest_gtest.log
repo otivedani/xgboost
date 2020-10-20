@@ -1,0 +1,2256 @@
+UpdateCTestConfiguration  from :/home/otivedani/xgboost/build/DartConfiguration.tcl
+UpdateCTestConfiguration  from :/home/otivedani/xgboost/build/DartConfiguration.tcl
+Test project /home/otivedani/xgboost/build
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 1
+    Start 1: TestXGBoostLib
+
+1: Test command: /home/otivedani/xgboost/build/testxgboost
+1: Test timeout computed to be: 10000000
+1: [==========] Running 510 tests from 98 test suites.
+1: [----------] Global test environment set-up.
+1: [----------] 6 tests from SpanDeathTest
+1: [ RUN      ] SpanDeathTest.FromPtrLen
+1: [       OK ] SpanDeathTest.FromPtrLen (6 ms)
+1: [ RUN      ] SpanDeathTest.ElementAccess
+1: [       OK ] SpanDeathTest.ElementAccess (32 ms)
+1: [ RUN      ] SpanDeathTest.FrontBack
+1: [       OK ] SpanDeathTest.FrontBack (14 ms)
+1: [ RUN      ] SpanDeathTest.FirstLast
+1: [       OK ] SpanDeathTest.FirstLast (44 ms)
+1: [ RUN      ] SpanDeathTest.Subspan
+1: [       OK ] SpanDeathTest.Subspan (13 ms)
+1: [ RUN      ] SpanDeathTest.Empty
+1: [       OK ] SpanDeathTest.Empty (4 ms)
+1: [----------] 6 tests from SpanDeathTest (113 ms total)
+1: 
+1: [----------] 1 test from TransformDeathTest
+1: [ RUN      ] TransformDeathTest.Exception
+1: [       OK ] TransformDeathTest.Exception (4 ms)
+1: [----------] 1 test from TransformDeathTest (4 ms total)
+1: 
+1: [----------] 1 test from GPUSpanDeathTest
+1: [ RUN      ] GPUSpanDeathTest.ElementAccess
+1: [       OK ] GPUSpanDeathTest.ElementAccess (2148 ms)
+1: [----------] 1 test from GPUSpanDeathTest (2148 ms total)
+1: 
+1: [----------] 1 test from RowPartitionerDeathTest
+1: [ RUN      ] RowPartitionerDeathTest.IncorrectRow
+1: 
+1: Kernel error:
+1: In: /home/otivedani/xgboost/tests/cpp/tree/gpu_hist/../../../../src/tree/gpu_hist/row_partitioner.cuh: 118
+1: 	lambda [](unsigned long)->auto::operator()(unsigned long)->auto
+1: 	Expecting: new_position == left_nidx || new_position == right_nidx
+1: 	Block: [0, 0, 0], Thread: [0, 0, 0]
+1: 
+1: [       OK ] RowPartitionerDeathTest.IncorrectRow (811 ms)
+1: [----------] 1 test from RowPartitionerDeathTest (811 ms total)
+1: 
+1: [----------] 8 tests from CAPI
+1: [ RUN      ] CAPI.XGDMatrixCreateFromMatDT
+1: [       OK ] CAPI.XGDMatrixCreateFromMatDT (0 ms)
+1: [ RUN      ] CAPI.XGDMatrixCreateFromMatOmp
+1: [       OK ] CAPI.XGDMatrixCreateFromMatOmp (14 ms)
+1: [ RUN      ] CAPI.Version
+1: [       OK ] CAPI.Version (0 ms)
+1: [ RUN      ] CAPI.ConfigIO
+1: [16:08:09] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 8 extra nodes, 0 pruned nodes, max_depth=3
+1: [       OK ] CAPI.ConfigIO (2 ms)
+1: [ RUN      ] CAPI.JsonModelIO
+1: [16:08:09] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 8 extra nodes, 0 pruned nodes, max_depth=3
+1: [       OK ] CAPI.JsonModelIO (0 ms)
+1: [ RUN      ] CAPI.CatchDMLCError
+1: [       OK ] CAPI.CatchDMLCError (1 ms)
+1: [ RUN      ] CAPI.DMatrixSetFeatureName
+1: [       OK ] CAPI.DMatrixSetFeatureName (0 ms)
+1: [ RUN      ] CAPI.Exception
+1: [       OK ] CAPI.Exception (0 ms)
+1: [----------] 8 tests from CAPI (18 ms total)
+1: 
+1: [----------] 6 tests from BitField
+1: [ RUN      ] BitField.Check
+1: [       OK ] BitField.Check (0 ms)
+1: [ RUN      ] BitField.Set
+1: [       OK ] BitField.Set (0 ms)
+1: [ RUN      ] BitField.Clear
+1: [       OK ] BitField.Clear (0 ms)
+1: [ RUN      ] BitField.StorageSize
+1: [       OK ] BitField.StorageSize (0 ms)
+1: [ RUN      ] BitField.GPUSet
+1: [       OK ] BitField.GPUSet (754 ms)
+1: [ RUN      ] BitField.GPUAnd
+1: [       OK ] BitField.GPUAnd (2 ms)
+1: [----------] 6 tests from BitField (756 ms total)
+1: 
+1: [----------] 15 tests from Ryu
+1: [ RUN      ] Ryu.Subnormal
+1: [       OK ] Ryu.Subnormal (0 ms)
+1: [ RUN      ] Ryu.Denormal
+1: [       OK ] Ryu.Denormal (0 ms)
+1: [ RUN      ] Ryu.SwitchToSubnormal
+1: [       OK ] Ryu.SwitchToSubnormal (0 ms)
+1: [ RUN      ] Ryu.MinAndMax
+1: [       OK ] Ryu.MinAndMax (0 ms)
+1: [ RUN      ] Ryu.BoundaryRoundEven
+1: [       OK ] Ryu.BoundaryRoundEven (0 ms)
+1: [ RUN      ] Ryu.ExactValueRoundEven
+1: [       OK ] Ryu.ExactValueRoundEven (0 ms)
+1: [ RUN      ] Ryu.LotsOfTrailingZeros
+1: [       OK ] Ryu.LotsOfTrailingZeros (0 ms)
+1: [ RUN      ] Ryu.Regression
+1: [       OK ] Ryu.Regression (0 ms)
+1: [ RUN      ] Ryu.RoundTrip
+1: [       OK ] Ryu.RoundTrip (0 ms)
+1: [ RUN      ] Ryu.LooksLikePow5
+1: [       OK ] Ryu.LooksLikePow5 (0 ms)
+1: [ RUN      ] Ryu.OutputLength
+1: [       OK ] Ryu.OutputLength (0 ms)
+1: [ RUN      ] Ryu.Basic
+1: [       OK ] Ryu.Basic (0 ms)
+1: [ RUN      ] Ryu.MinMax
+1: [       OK ] Ryu.MinMax (0 ms)
+1: [ RUN      ] Ryu.MantissaRoundingOverflow
+1: [       OK ] Ryu.MantissaRoundingOverflow (0 ms)
+1: [ RUN      ] Ryu.TrailingZeros
+1: [       OK ] Ryu.TrailingZeros (0 ms)
+1: [----------] 15 tests from Ryu (0 ms total)
+1: 
+1: [----------] 1 test from IntegerPrinting
+1: [ RUN      ] IntegerPrinting.Basic
+1: [       OK ] IntegerPrinting.Basic (0 ms)
+1: [----------] 1 test from IntegerPrinting (0 ms total)
+1: 
+1: [----------] 1 test from DenseColumn
+1: [ RUN      ] DenseColumn.Test
+1: [       OK ] DenseColumn.Test (1 ms)
+1: [----------] 1 test from DenseColumn (1 ms total)
+1: 
+1: [----------] 1 test from SparseColumn
+1: [ RUN      ] SparseColumn.Test
+1: [       OK ] SparseColumn.Test (0 ms)
+1: [----------] 1 test from SparseColumn (0 ms total)
+1: 
+1: [----------] 1 test from DenseColumnWithMissing
+1: [ RUN      ] DenseColumnWithMissing.Test
+1: [       OK ] DenseColumnWithMissing.Test (0 ms)
+1: [----------] 1 test from DenseColumnWithMissing (0 ms total)
+1: 
+1: [----------] 1 test from HistIndexCreationWithExternalMemory
+1: [ RUN      ] HistIndexCreationWithExternalMemory.Test
+1: [16:08:10] INFO: /home/otivedani/xgboost/tests/cpp/data/../../../src/data/sparse_page_writer.h:116: SparsePageWriter Finished writing to /tmp/tmpdir.HUQFot/big.libsvm.cache.row.page
+1: [16:08:10] INFO: /home/otivedani/xgboost/tests/cpp/data/../../../src/data/sparse_page_source.h:367: SparsePageSource Finished writing to /tmp/tmpdir.HUQFot/big.libsvm.cache
+1: [16:08:10] INFO: /home/otivedani/xgboost/tests/cpp/data/../../../src/data/sparse_page_writer.h:116: SparsePageWriter Finished writing to /tmp/tmpdir.hCJBSq/big.libsvm.cache.row.page
+1: [16:08:10] INFO: /home/otivedani/xgboost/tests/cpp/data/../../../src/data/sparse_page_source.h:367: SparsePageSource Finished writing to /tmp/tmpdir.hCJBSq/big.libsvm.cache
+1: [16:08:10] INFO: /home/otivedani/xgboost/tests/cpp/data/../../../src/data/sparse_page_writer.h:116: SparsePageWriter Finished writing to /tmp/tmpdir.fZmkys/big.libsvm.cache.row.page
+1: [16:08:10] INFO: /home/otivedani/xgboost/tests/cpp/data/../../../src/data/sparse_page_source.h:367: SparsePageSource Finished writing to /tmp/tmpdir.fZmkys/big.libsvm.cache
+1: [       OK ] HistIndexCreationWithExternalMemory.Test (171 ms)
+1: [----------] 1 test from HistIndexCreationWithExternalMemory (171 ms total)
+1: 
+1: [----------] 1 test from ArgSort
+1: [ RUN      ] ArgSort.Basic
+1: [       OK ] ArgSort.Basic (0 ms)
+1: [----------] 1 test from ArgSort (0 ms total)
+1: 
+1: [----------] 2 tests from CompressedIterator
+1: [ RUN      ] CompressedIterator.Test
+1: [       OK ] CompressedIterator.Test (356 ms)
+1: [ RUN      ] CompressedIterator.TestGPU
+1: [       OK ] CompressedIterator.TestGPU (19589 ms)
+1: [----------] 2 tests from CompressedIterator (19945 ms total)
+1: 
+1: [----------] 3 tests from ConfigParser
+1: [ RUN      ] ConfigParser.NormalizeConfigEOL
+1: [       OK ] ConfigParser.NormalizeConfigEOL (2 ms)
+1: [ RUN      ] ConfigParser.TrimWhitespace
+1: [       OK ] ConfigParser.TrimWhitespace (0 ms)
+1: [ RUN      ] ConfigParser.ParseKeyValuePair
+1: [       OK ] ConfigParser.ParseKeyValuePair (1 ms)
+1: [----------] 3 tests from ConfigParser (3 ms total)
+1: 
+1: [----------] 1 test from GroupData
+1: [ RUN      ] GroupData.ParallelGroupBuilder
+1: [       OK ] GroupData.ParallelGroupBuilder (0 ms)
+1: [----------] 1 test from GroupData (0 ms total)
+1: 
+1: [----------] 4 tests from ParallelGHistBuilder
+1: [ RUN      ] ParallelGHistBuilder.ResetDouble
+1: [       OK ] ParallelGHistBuilder.ResetDouble (5 ms)
+1: [ RUN      ] ParallelGHistBuilder.ResetFloat
+1: [       OK ] ParallelGHistBuilder.ResetFloat (4 ms)
+1: [ RUN      ] ParallelGHistBuilder.ReduceHistDouble
+1: [       OK ] ParallelGHistBuilder.ReduceHistDouble (2 ms)
+1: [ RUN      ] ParallelGHistBuilder.ReduceHistFloat
+1: [       OK ] ParallelGHistBuilder.ReduceHistFloat (2 ms)
+1: [----------] 4 tests from ParallelGHistBuilder (14 ms total)
+1: 
+1: [----------] 1 test from CutsBuilder
+1: [ RUN      ] CutsBuilder.SearchGroupInd
+1: [       OK ] CutsBuilder.SearchGroupInd (0 ms)
+1: [----------] 1 test from CutsBuilder (0 ms total)
+1: 
+1: [----------] 29 tests from HistUtil
+1: [ RUN      ] HistUtil.DenseCutsCategorical
+1: [       OK ] HistUtil.DenseCutsCategorical (93 ms)
+1: [ RUN      ] HistUtil.DenseCutsAccuracyTest
+1: [       OK ] HistUtil.DenseCutsAccuracyTest (31 ms)
+1: [ RUN      ] HistUtil.DenseCutsAccuracyTestWeights
+1: [       OK ] HistUtil.DenseCutsAccuracyTestWeights (114 ms)
+1: [ RUN      ] HistUtil.DenseCutsExternalMemory
+1: [16:08:30] INFO: /home/otivedani/xgboost/tests/cpp/data/../../../src/data/sparse_page_writer.h:116: SparsePageWriter Finished writing to /tmp/tmpdir.HphiYr/temp.libsvm.cache.row.page
+1: [16:08:30] INFO: /home/otivedani/xgboost/tests/cpp/data/../../../src/data/sparse_page_source.h:367: SparsePageSource Finished writing to /tmp/tmpdir.HphiYr/temp.libsvm.cache
+1: [16:08:30] INFO: /home/otivedani/xgboost/tests/cpp/data/../../../src/data/sparse_page_writer.h:116: SparsePageWriter Finished writing to /tmp/tmpdir.i6fAIq/temp.libsvm.cache.row.page
+1: [16:08:30] INFO: /home/otivedani/xgboost/tests/cpp/data/../../../src/data/sparse_page_source.h:367: SparsePageSource Finished writing to /tmp/tmpdir.i6fAIq/temp.libsvm.cache
+1: [16:08:30] INFO: /home/otivedani/xgboost/tests/cpp/data/../../../src/data/sparse_page_writer.h:116: SparsePageWriter Finished writing to /tmp/tmpdir.IiF8Nq/temp.libsvm.cache.row.page
+1: [16:08:30] INFO: /home/otivedani/xgboost/tests/cpp/data/../../../src/data/sparse_page_source.h:367: SparsePageSource Finished writing to /tmp/tmpdir.IiF8Nq/temp.libsvm.cache
+1: [       OK ] HistUtil.DenseCutsExternalMemory (426 ms)
+1: [ RUN      ] HistUtil.IndexBinBound
+1: [       OK ] HistUtil.IndexBinBound (45 ms)
+1: [ RUN      ] HistUtil.IndexBinData
+1: [       OK ] HistUtil.IndexBinData (45 ms)
+1: [ RUN      ] HistUtil.SketchFromWeights
+1: [       OK ] HistUtil.SketchFromWeights (39 ms)
+1: [ RUN      ] HistUtil.DeviceSketch
+1: [       OK ] HistUtil.DeviceSketch (25 ms)
+1: [ RUN      ] HistUtil.SketchBatchNumElements
+1: [       OK ] HistUtil.SketchBatchNumElements (1 ms)
+1: [ RUN      ] HistUtil.DeviceSketchMemory
+1: [16:08:31] ======== Monitor: SketchContainer ========
+1: [16:08:31] MakeCuts: 0.007316s, 1 calls @ 7316us
+1: 
+1: [16:08:31] Prune: 0.004329s, 1 calls @ 4329us
+1: 
+1: [16:08:31] ScanInput: 0.001878s, 1 calls @ 1878us
+1: 
+1: [16:08:31] Unique: 0.002516s, 1 calls @ 2516us
+1: 
+1: [       OK ] HistUtil.DeviceSketchMemory (20 ms)
+1: [ RUN      ] HistUtil.DeviceSketchWeightsMemory
+1: [16:08:31] ======== Monitor: SketchContainer ========
+1: [16:08:31] MakeCuts: 0.006716s, 1 calls @ 6716us
+1: 
+1: [16:08:31] Prune: 0.003846s, 1 calls @ 3846us
+1: 
+1: [16:08:31] ScanInput: 0.0017s, 1 calls @ 1700us
+1: 
+1: [16:08:31] Unique: 0.002104s, 1 calls @ 2104us
+1: 
+1: [       OK ] HistUtil.DeviceSketchWeightsMemory (22 ms)
+1: [ RUN      ] HistUtil.DeviceSketchDeterminism
+1: [       OK ] HistUtil.DeviceSketchDeterminism (1708 ms)
+1: [ RUN      ] HistUtil.DeviceSketchCategoricalAsNumeric
+1: [       OK ] HistUtil.DeviceSketchCategoricalAsNumeric (211 ms)
+1: [ RUN      ] HistUtil.DeviceSketchCategoricalFeatures
+1: [       OK ] HistUtil.DeviceSketchCategoricalFeatures (22 ms)
+1: [ RUN      ] HistUtil.DeviceSketchMultipleColumns
+1: [       OK ] HistUtil.DeviceSketchMultipleColumns (232 ms)
+1: [ RUN      ] HistUtil.DeviceSketchMultipleColumnsWeights
+1: [       OK ] HistUtil.DeviceSketchMultipleColumnsWeights (264 ms)
+1: [ RUN      ] HistUtil.DeviceSketchBatches
+1: [       OK ] HistUtil.DeviceSketchBatches (2777 ms)
+1: [ RUN      ] HistUtil.DeviceSketchMultipleColumnsExternal
+1: [       OK ] HistUtil.DeviceSketchMultipleColumnsExternal (563 ms)
+1: [ RUN      ] HistUtil.DeviceSketchExternalMemoryWithWeights
+1: [       OK ] HistUtil.DeviceSketchExternalMemoryWithWeights (573 ms)
+1: [ RUN      ] HistUtil.AdapterDeviceSketch
+1: [       OK ] HistUtil.AdapterDeviceSketch (31 ms)
+1: [ RUN      ] HistUtil.AdapterDeviceSketchMemory
+1: [16:08:37] ======== Monitor: SketchContainer ========
+1: [16:08:37] MakeCuts: 0.007483s, 1 calls @ 7483us
+1: 
+1: [16:08:37] Prune: 0.004312s, 1 calls @ 4312us
+1: 
+1: [16:08:37] ScanInput: 0.002493s, 1 calls @ 2493us
+1: 
+1: [16:08:37] Unique: 0.002139s, 1 calls @ 2139us
+1: 
+1: [       OK ] HistUtil.AdapterDeviceSketchMemory (23 ms)
+1: [ RUN      ] HistUtil.AdapterSketchSlidingWindowMemory
+1: [       OK ] HistUtil.AdapterSketchSlidingWindowMemory (23 ms)
+1: [ RUN      ] HistUtil.AdapterSketchSlidingWindowWeightedMemory
+1: [       OK ] HistUtil.AdapterSketchSlidingWindowWeightedMemory (25 ms)
+1: [ RUN      ] HistUtil.AdapterDeviceSketchCategorical
+1: [       OK ] HistUtil.AdapterDeviceSketchCategorical (225 ms)
+1: [ RUN      ] HistUtil.AdapterDeviceSketchMultipleColumns
+1: [       OK ] HistUtil.AdapterDeviceSketchMultipleColumns (244 ms)
+1: [ RUN      ] HistUtil.AdapterDeviceSketchBatches
+1: [       OK ] HistUtil.AdapterDeviceSketchBatches (227 ms)
+1: [ RUN      ] HistUtil.SketchingEquivalent
+1: [       OK ] HistUtil.SketchingEquivalent (690 ms)
+1: [ RUN      ] HistUtil.DeviceSketchFromGroupWeights
+1: [       OK ] HistUtil.DeviceSketchFromGroupWeights (467 ms)
+1: [ RUN      ] HistUtil.AdapterSketchFromWeights
+1: [       OK ] HistUtil.AdapterSketchFromWeights (74 ms)
+1: [----------] 29 tests from HistUtil (9242 ms total)
+1: 
+1: [----------] 1 test from IntrusivePtr
+1: [ RUN      ] IntrusivePtr.Basic
+1: [       OK ] IntrusivePtr.Basic (0 ms)
+1: [----------] 1 test from IntrusivePtr (0 ms total)
+1: 
+1: [----------] 3 tests from IO
+1: [ RUN      ] IO.FileExtension
+1: [       OK ] IO.FileExtension (0 ms)
+1: [ RUN      ] IO.FixedSizeStream
+1: [       OK ] IO.FixedSizeStream (0 ms)
+1: [ RUN      ] IO.LoadSequentialFile
+1: [       OK ] IO.LoadSequentialFile (806 ms)
+1: [----------] 3 tests from IO (806 ms total)
+1: 
+1: [----------] 19 tests from Json
+1: [ RUN      ] Json.TestParseObject
+1: [       OK ] Json.TestParseObject (0 ms)
+1: [ RUN      ] Json.ParseNumber
+1: [       OK ] Json.ParseNumber (0 ms)
+1: [ RUN      ] Json.ParseArray
+1: [       OK ] Json.ParseArray (0 ms)
+1: [ RUN      ] Json.Null
+1: [       OK ] Json.Null (0 ms)
+1: [ RUN      ] Json.EmptyObject
+1: [       OK ] Json.EmptyObject (0 ms)
+1: [ RUN      ] Json.EmptyArray
+1: [       OK ] Json.EmptyArray (0 ms)
+1: [ RUN      ] Json.Boolean
+1: [       OK ] Json.Boolean (0 ms)
+1: [ RUN      ] Json.Indexing
+1: [       OK ] Json.Indexing (0 ms)
+1: [ RUN      ] Json.AssigningObjects
+1: [       OK ] Json.AssigningObjects (0 ms)
+1: [ RUN      ] Json.AssigningArray
+1: [       OK ] Json.AssigningArray (0 ms)
+1: [ RUN      ] Json.AssigningNumber
+1: [       OK ] Json.AssigningNumber (0 ms)
+1: [ RUN      ] Json.AssigningString
+1: [       OK ] Json.AssigningString (0 ms)
+1: [ RUN      ] Json.LoadDump
+1: [       OK ] Json.LoadDump (0 ms)
+1: [ RUN      ] Json.Invalid
+1: [       OK ] Json.Invalid (1 ms)
+1: [ RUN      ] Json.CopyUnicode
+1: [       OK ] Json.CopyUnicode (0 ms)
+1: [ RUN      ] Json.WrongCasts
+1: [       OK ] Json.WrongCasts (0 ms)
+1: [ RUN      ] Json.Integer
+1: [       OK ] Json.Integer (0 ms)
+1: [ RUN      ] Json.IntVSFloat
+1: [       OK ] Json.IntVSFloat (0 ms)
+1: [ RUN      ] Json.RoundTrip
+1: [       OK ] Json.RoundTrip (535 ms)
+1: [----------] 19 tests from Json (537 ms total)
+1: 
+1: [----------] 1 test from Monitor
+1: [ RUN      ] Monitor.Logging
+1: [       OK ] Monitor.Logging (0 ms)
+1: [----------] 1 test from Monitor (0 ms total)
+1: 
+1: [----------] 1 test from EnumClassParam
+1: [ RUN      ] EnumClassParam.Basic
+1: [       OK ] EnumClassParam.Basic (0 ms)
+1: [----------] 1 test from EnumClassParam (0 ms total)
+1: 
+1: [----------] 1 test from XGBoostParameter
+1: [ RUN      ] XGBoostParameter.Update
+1: [       OK ] XGBoostParameter.Update (0 ms)
+1: [----------] 1 test from XGBoostParameter (0 ms total)
+1: 
+1: [----------] 1 test from PartitionBuilder
+1: [ RUN      ] PartitionBuilder.BasicTest
+1: [       OK ] PartitionBuilder.BasicTest (0 ms)
+1: [----------] 1 test from PartitionBuilder (0 ms total)
+1: 
+1: [----------] 4 tests from ProbabilityDistribution
+1: [ RUN      ] ProbabilityDistribution.DistributionGeneric
+1: [       OK ] ProbabilityDistribution.DistributionGeneric (4 ms)
+1: [ RUN      ] ProbabilityDistribution.NormalDist
+1: [       OK ] ProbabilityDistribution.NormalDist (0 ms)
+1: [ RUN      ] ProbabilityDistribution.LogisticDist
+1: [       OK ] ProbabilityDistribution.LogisticDist (0 ms)
+1: [ RUN      ] ProbabilityDistribution.ExtremeDist
+1: [       OK ] ProbabilityDistribution.ExtremeDist (2 ms)
+1: [----------] 4 tests from ProbabilityDistribution (6 ms total)
+1: 
+1: [----------] 4 tests from Quantile
+1: [ RUN      ] Quantile.LoadBalance
+1: [       OK ] Quantile.LoadBalance (11 ms)
+1: [ RUN      ] Quantile.DistributedBasic
+1: [16:08:41] WARNING: /home/otivedani/xgboost/tests/cpp/common/test_quantile.h:16: Skipping AllReduce test as `DMLC_TRACKER_PORT` is not set up.
+1: [       OK ] Quantile.DistributedBasic (0 ms)
+1: [ RUN      ] Quantile.Distributed
+1: [16:08:41] WARNING: /home/otivedani/xgboost/tests/cpp/common/test_quantile.h:16: Skipping AllReduce test as `DMLC_TRACKER_PORT` is not set up.
+1: [       OK ] Quantile.Distributed (0 ms)
+1: [ RUN      ] Quantile.SameOnAllWorkers
+1: [16:08:41] WARNING: /home/otivedani/xgboost/tests/cpp/common/test_quantile.h:16: Skipping Quantile AllreduceBasic test as `DMLC_TRACKER_PORT` is not set up.
+1: [16:08:41] WARNING: /home/otivedani/xgboost/tests/cpp/common/test_quantile.cc:123: Skipping Quantile AllreduceBasic test
+1: [       OK ] Quantile.SameOnAllWorkers (0 ms)
+1: [----------] 4 tests from Quantile (11 ms total)
+1: 
+1: [----------] 3 tests from ColumnSampler
+1: [ RUN      ] ColumnSampler.Test
+1: [       OK ] ColumnSampler.Test (1 ms)
+1: [ RUN      ] ColumnSampler.ThreadSynchronisation
+1: [       OK ] ColumnSampler.ThreadSynchronisation (191 ms)
+1: [ RUN      ] ColumnSampler.WeightedSampling
+1: [       OK ] ColumnSampler.WeightedSampling (4 ms)
+1: [----------] 3 tests from ColumnSampler (196 ms total)
+1: 
+1: [----------] 20 tests from Span
+1: [ RUN      ] Span.TestStatus
+1: [       OK ] Span.TestStatus (0 ms)
+1: [ RUN      ] Span.DlfConstructors
+1: [       OK ] Span.DlfConstructors (0 ms)
+1: [ RUN      ] Span.FromNullPtr
+1: [       OK ] Span.FromNullPtr (0 ms)
+1: [ RUN      ] Span.FromPtrLen
+1: [       OK ] Span.FromPtrLen (0 ms)
+1: [ RUN      ] Span.FromFirstLast
+1: [       OK ] Span.FromFirstLast (0 ms)
+1: [ RUN      ] Span.FromOther
+1: [       OK ] Span.FromOther (0 ms)
+1: [ RUN      ] Span.FromArray
+1: [       OK ] Span.FromArray (0 ms)
+1: [ RUN      ] Span.FromContainer
+1: [       OK ] Span.FromContainer (0 ms)
+1: [ RUN      ] Span.Assignment
+1: [       OK ] Span.Assignment (0 ms)
+1: [ RUN      ] Span.BeginEnd
+1: [       OK ] Span.BeginEnd (0 ms)
+1: [ RUN      ] Span.RBeginREnd
+1: [       OK ] Span.RBeginREnd (0 ms)
+1: [ RUN      ] Span.ElementAccess
+1: [       OK ] Span.ElementAccess (0 ms)
+1: [ RUN      ] Span.Obversers
+1: [       OK ] Span.Obversers (0 ms)
+1: [ RUN      ] Span.FrontBack
+1: [       OK ] Span.FrontBack (0 ms)
+1: [ RUN      ] Span.FirstLast
+1: [       OK ] Span.FirstLast (0 ms)
+1: [ RUN      ] Span.Subspan
+1: [       OK ] Span.Subspan (0 ms)
+1: [ RUN      ] Span.Compare
+1: [       OK ] Span.Compare (0 ms)
+1: [ RUN      ] Span.AsBytes
+1: [       OK ] Span.AsBytes (0 ms)
+1: [ RUN      ] Span.AsWritableBytes
+1: [       OK ] Span.AsWritableBytes (0 ms)
+1: [ RUN      ] Span.Empty
+1: [       OK ] Span.Empty (0 ms)
+1: [----------] 20 tests from Span (0 ms total)
+1: 
+1: [----------] 4 tests from SpanIter
+1: [ RUN      ] SpanIter.Construct
+1: [       OK ] SpanIter.Construct (0 ms)
+1: [ RUN      ] SpanIter.Ref
+1: [       OK ] SpanIter.Ref (0 ms)
+1: [ RUN      ] SpanIter.Calculate
+1: [       OK ] SpanIter.Calculate (0 ms)
+1: [ RUN      ] SpanIter.Compare
+1: [       OK ] SpanIter.Compare (0 ms)
+1: [----------] 4 tests from SpanIter (0 ms total)
+1: 
+1: [----------] 5 tests from AFTLoss
+1: [ RUN      ] AFTLoss.RobustGradientPair
+1: [       OK ] AFTLoss.RobustGradientPair (0 ms)
+1: [ RUN      ] AFTLoss.Uncensored
+1: [       OK ] AFTLoss.Uncensored (0 ms)
+1: [ RUN      ] AFTLoss.LeftCensored
+1: [       OK ] AFTLoss.LeftCensored (0 ms)
+1: [ RUN      ] AFTLoss.RightCensored
+1: [       OK ] AFTLoss.RightCensored (0 ms)
+1: [ RUN      ] AFTLoss.IntervalCensored
+1: [       OK ] AFTLoss.IntervalCensored (0 ms)
+1: [----------] 5 tests from AFTLoss (1 ms total)
+1: 
+1: [----------] 1 test from CreateBlockedSpace2d
+1: [ RUN      ] CreateBlockedSpace2d.Test
+1: [       OK ] CreateBlockedSpace2d.Test (0 ms)
+1: [----------] 1 test from CreateBlockedSpace2d (0 ms total)
+1: 
+1: [----------] 1 test from ParallelFor2d
+1: [ RUN      ] ParallelFor2d.Test
+1: [       OK ] ParallelFor2d.Test (3 ms)
+1: [----------] 1 test from ParallelFor2d (3 ms total)
+1: 
+1: [----------] 1 test from ParallelFor2dNonUniform
+1: [ RUN      ] ParallelFor2dNonUniform.Test
+1: [       OK ] ParallelFor2dNonUniform.Test (3 ms)
+1: [----------] 1 test from ParallelFor2dNonUniform (3 ms total)
+1: 
+1: [----------] 3 tests from Transform
+1: [ RUN      ] Transform.Basic
+1: [       OK ] Transform.Basic (7 ms)
+1: [ RUN      ] Transform.GPUBasic
+1: [       OK ] Transform.GPUBasic (2 ms)
+1: [ RUN      ] Transform.MGPU_SpecifiedGpuId
+1: [16:08:41] WARNING: /home/otivedani/xgboost/tests/cpp/common/test_transform_range.cu:10: Not testing in multi-gpu environment.
+1: [       OK ] Transform.MGPU_SpecifiedGpuId (0 ms)
+1: [----------] 3 tests from Transform (9 ms total)
+1: 
+1: [----------] 1 test from Version
+1: [ RUN      ] Version.Basic
+1: [       OK ] Version.Basic (0 ms)
+1: [----------] 1 test from Version (0 ms total)
+1: 
+1: [----------] 3 tests from Adapter
+1: [ RUN      ] Adapter.CSRAdapter
+1: [       OK ] Adapter.CSRAdapter (0 ms)
+1: [ RUN      ] Adapter.CSCAdapterColsMoreThanRows
+1: [       OK ] Adapter.CSCAdapterColsMoreThanRows (2 ms)
+1: [ RUN      ] Adapter.IteratorAdapter
+1: [       OK ] Adapter.IteratorAdapter (0 ms)
+1: [----------] 3 tests from Adapter (2 ms total)
+1: 
+1: [----------] 2 tests from ArrayInterface
+1: [ RUN      ] ArrayInterface.Initialize
+1: [       OK ] ArrayInterface.Initialize (0 ms)
+1: [ RUN      ] ArrayInterface.Error
+1: [       OK ] ArrayInterface.Error (1 ms)
+1: [----------] 2 tests from ArrayInterface (1 ms total)
+1: 
+1: [----------] 2 tests from SparsePage
+1: [ RUN      ] SparsePage.PushCSC
+1: [       OK ] SparsePage.PushCSC (0 ms)
+1: [ RUN      ] SparsePage.PushCSCAfterTranspose
+1: [16:08:41] INFO: /home/otivedani/xgboost/tests/cpp/data/../../../src/data/sparse_page_writer.h:116: SparsePageWriter Finished writing to /tmp/tmpdir.1BDdqu/big.libsvm.cache.row.page
+1: [16:08:41] INFO: /home/otivedani/xgboost/tests/cpp/data/../../../src/data/sparse_page_source.h:367: SparsePageSource Finished writing to /tmp/tmpdir.1BDdqu/big.libsvm.cache
+1: [       OK ] SparsePage.PushCSCAfterTranspose (11 ms)
+1: [----------] 2 tests from SparsePage (11 ms total)
+1: 
+1: [----------] 1 test from DMatrix
+1: [ RUN      ] DMatrix.Uri
+1: [16:08:41] 16x8 matrix with 128 entries loaded from /tmp/tmpdir.NGS14s/small.csv?format=csv
+1: [       OK ] DMatrix.Uri (3 ms)
+1: [----------] 1 test from DMatrix (3 ms total)
+1: 
+1: [----------] 9 tests from MetaInfo
+1: [ RUN      ] MetaInfo.GetSet
+1: [       OK ] MetaInfo.GetSet (0 ms)
+1: [ RUN      ] MetaInfo.GetSetFeature
+1: [       OK ] MetaInfo.GetSetFeature (0 ms)
+1: [ RUN      ] MetaInfo.SaveLoadBinary
+1: [       OK ] MetaInfo.SaveLoadBinary (0 ms)
+1: [ RUN      ] MetaInfo.LoadQid
+1: [       OK ] MetaInfo.LoadQid (5 ms)
+1: [ RUN      ] MetaInfo.Validate
+1: [       OK ] MetaInfo.Validate (1 ms)
+1: [ RUN      ] MetaInfo.HostExtend
+1: [       OK ] MetaInfo.HostExtend (0 ms)
+1: [ RUN      ] MetaInfo.FromInterface
+1: [       OK ] MetaInfo.FromInterface (25 ms)
+1: [ RUN      ] MetaInfo.Group
+1: [       OK ] MetaInfo.Group (21 ms)
+1: [ RUN      ] MetaInfo.DeviceExtend
+1: [       OK ] MetaInfo.DeviceExtend (24 ms)
+1: [----------] 9 tests from MetaInfo (76 ms total)
+1: 
+1: [----------] 17 tests from SimpleDMatrix
+1: [ RUN      ] SimpleDMatrix.MetaInfo
+1: [       OK ] SimpleDMatrix.MetaInfo (3 ms)
+1: [ RUN      ] SimpleDMatrix.RowAccess
+1: [16:08:41] 2x5 matrix with 6 entries loaded from /tmp/tmpdir.vADrCs/simple.libsvm
+1: [       OK ] SimpleDMatrix.RowAccess (5 ms)
+1: [ RUN      ] SimpleDMatrix.ColAccessWithoutBatches
+1: [       OK ] SimpleDMatrix.ColAccessWithoutBatches (8 ms)
+1: [ RUN      ] SimpleDMatrix.Empty
+1: [       OK ] SimpleDMatrix.Empty (0 ms)
+1: [ RUN      ] SimpleDMatrix.MissingData
+1: [       OK ] SimpleDMatrix.MissingData (0 ms)
+1: [ RUN      ] SimpleDMatrix.EmptyRow
+1: [       OK ] SimpleDMatrix.EmptyRow (0 ms)
+1: [ RUN      ] SimpleDMatrix.FromDense
+1: [       OK ] SimpleDMatrix.FromDense (2 ms)
+1: [ RUN      ] SimpleDMatrix.FromCSC
+1: [       OK ] SimpleDMatrix.FromCSC (2 ms)
+1: [ RUN      ] SimpleDMatrix.FromFile
+1: [       OK ] SimpleDMatrix.FromFile (3 ms)
+1: [ RUN      ] SimpleDMatrix.Slice
+1: [       OK ] SimpleDMatrix.Slice (0 ms)
+1: [ RUN      ] SimpleDMatrix.SaveLoadBinary
+1: [       OK ] SimpleDMatrix.SaveLoadBinary (4 ms)
+1: [ RUN      ] SimpleDMatrix.FromColumnarDenseBasic
+1: [       OK ] SimpleDMatrix.FromColumnarDenseBasic (7 ms)
+1: [ RUN      ] SimpleDMatrix.FromColumnarDense
+1: [       OK ] SimpleDMatrix.FromColumnarDense (18 ms)
+1: [ RUN      ] SimpleDMatrix.FromColumnarWithEmptyRows
+1: [       OK ] SimpleDMatrix.FromColumnarWithEmptyRows (115 ms)
+1: [ RUN      ] SimpleDMatrix.FromColumnarSparseBasic
+1: [       OK ] SimpleDMatrix.FromColumnarSparseBasic (14 ms)
+1: [ RUN      ] SimpleDMatrix.FromCupy
+1: [       OK ] SimpleDMatrix.FromCupy (5 ms)
+1: [ RUN      ] SimpleDMatrix.FromCupySparse
+1: [       OK ] SimpleDMatrix.FromCupySparse (6 ms)
+1: [----------] 17 tests from SimpleDMatrix (193 ms total)
+1: 
+1: [----------] 17 tests from SparsePageDMatrix
+1: [ RUN      ] SparsePageDMatrix.MetaInfo
+1: [16:08:41] INFO: /home/otivedani/xgboost/tests/cpp/data/../../../src/data/sparse_page_writer.h:116: SparsePageWriter Finished writing to /tmp/tmpdir.k92szs/simple.libsvm.cache.row.page
+1: [16:08:41] INFO: /home/otivedani/xgboost/tests/cpp/data/../../../src/data/sparse_page_source.h:367: SparsePageSource Finished writing to /tmp/tmpdir.k92szs/simple.libsvm.cache
+1: [16:08:41] 2x5 matrix with 6 entries loaded from /tmp/tmpdir.k92szs/simple.libsvm#/tmp/tmpdir.k92szs/simple.libsvm.cache
+1: /tmp/tmpdir.k92szs/simple.libsvm
+1: [       OK ] SparsePageDMatrix.MetaInfo (7 ms)
+1: [ RUN      ] SparsePageDMatrix.RowAccess
+1: [16:08:41] INFO: /home/otivedani/xgboost/tests/cpp/data/../../../src/data/sparse_page_writer.h:116: SparsePageWriter Finished writing to /tmp/tmpdir.IenEut/big.libsvm.cache.row.page
+1: [16:08:41] INFO: /home/otivedani/xgboost/tests/cpp/data/../../../src/data/sparse_page_source.h:367: SparsePageSource Finished writing to /tmp/tmpdir.IenEut/big.libsvm.cache
+1: [       OK ] SparsePageDMatrix.RowAccess (8 ms)
+1: [ RUN      ] SparsePageDMatrix.ColAccess
+1: [16:08:41] INFO: /home/otivedani/xgboost/tests/cpp/data/../../../src/data/sparse_page_writer.h:116: SparsePageWriter Finished writing to /tmp/tmpdir.Qo9OUs/simple.libsvm.cache.row.page
+1: [16:08:41] INFO: /home/otivedani/xgboost/tests/cpp/data/../../../src/data/sparse_page_source.h:367: SparsePageSource Finished writing to /tmp/tmpdir.Qo9OUs/simple.libsvm.cache
+1: [16:08:41] INFO: /home/otivedani/xgboost/src/data/./sparse_page_source.h:493: SortedCSCPageSource: Finished writing to /tmp/tmpdir.Qo9OUs/simple.libsvm.cache
+1: [16:08:41] INFO: /home/otivedani/xgboost/tests/cpp/data/../../../src/data/sparse_page_writer.h:116: SparsePageWriter Finished writing to /tmp/tmpdir.Qo9OUs/simple.libsvm.cache.sorted.col.page
+1: [16:08:41] INFO: /home/otivedani/xgboost/src/data/./sparse_page_source.h:430: CSCPageSource: Finished writing to /tmp/tmpdir.Qo9OUs/simple.libsvm.cache
+1: [16:08:41] INFO: /home/otivedani/xgboost/tests/cpp/data/../../../src/data/sparse_page_writer.h:116: SparsePageWriter Finished writing to /tmp/tmpdir.Qo9OUs/simple.libsvm.cache.col.page
+1: [       OK ] SparsePageDMatrix.ColAccess (15 ms)
+1: [ RUN      ] SparsePageDMatrix.ExistingCacheFile
+1: [16:08:41] INFO: /home/otivedani/xgboost/tests/cpp/data/../../../src/data/sparse_page_writer.h:116: SparsePageWriter Finished writing to /tmp/tmpdir.ZEkRzr/big.libsvm.cache.row.page
+1: [16:08:41] INFO: /home/otivedani/xgboost/tests/cpp/data/../../../src/data/sparse_page_source.h:367: SparsePageSource Finished writing to /tmp/tmpdir.ZEkRzr/big.libsvm.cache
+1: [16:08:41] WARNING: /home/otivedani/xgboost/src/data/data.cc:695: No format parameter is provided in input uri, but found file extension: libsvm .  Consider providing a uri parameter: filename?format=libsvm
+1: [       OK ] SparsePageDMatrix.ExistingCacheFile (9 ms)
+1: [ RUN      ] SparsePageDMatrix.ThreadSafetyException
+1: [16:08:41] INFO: /home/otivedani/xgboost/tests/cpp/data/../../../src/data/sparse_page_writer.h:116: SparsePageWriter Finished writing to /tmp/tmpdir.WSkpxs/test.cache.row.page
+1: [16:08:41] INFO: /home/otivedani/xgboost/tests/cpp/data/../../../src/data/sparse_page_source.h:367: SparsePageSource Finished writing to /tmp/tmpdir.WSkpxs/test.cache
+1: [       OK ] SparsePageDMatrix.ThreadSafetyException (183 ms)
+1: [ RUN      ] SparsePageDMatrix.ColAccessBatches
+1: [16:08:41] INFO: /home/otivedani/xgboost/tests/cpp/data/../../../src/data/sparse_page_writer.h:116: SparsePageWriter Finished writing to /tmp/tmpdir.GJR3Ls/big.libsvm.cache.row.page
+1: [16:08:41] INFO: /home/otivedani/xgboost/tests/cpp/data/../../../src/data/sparse_page_source.h:367: SparsePageSource Finished writing to /tmp/tmpdir.GJR3Ls/big.libsvm.cache
+1: [16:08:41] INFO: /home/otivedani/xgboost/src/data/./sparse_page_source.h:430: CSCPageSource: Finished writing to /tmp/tmpdir.GJR3Ls/big.libsvm.cache
+1: [16:08:41] INFO: /home/otivedani/xgboost/tests/cpp/data/../../../src/data/sparse_page_writer.h:116: SparsePageWriter Finished writing to /tmp/tmpdir.GJR3Ls/big.libsvm.cache.col.page
+1: [       OK ] SparsePageDMatrix.ColAccessBatches (55 ms)
+1: [ RUN      ] SparsePageDMatrix.Empty
+1: [16:08:41] INFO: /home/otivedani/xgboost/tests/cpp/data/../../../src/data/sparse_page_writer.h:116: SparsePageWriter Finished writing to /tmp/tmpdir.EwllRt/simple.libsvm.row.page
+1: [16:08:41] INFO: /home/otivedani/xgboost/tests/cpp/data/../../../src/data/sparse_page_source.h:367: SparsePageSource Finished writing to /tmp/tmpdir.EwllRt/simple.libsvm
+1: [16:08:41] INFO: /home/otivedani/xgboost/tests/cpp/data/../../../src/data/sparse_page_writer.h:116: SparsePageWriter Finished writing to /tmp/tmpdir.EwllRt/simple.libsvm.row.page
+1: [16:08:41] INFO: /home/otivedani/xgboost/tests/cpp/data/../../../src/data/sparse_page_source.h:367: SparsePageSource Finished writing to /tmp/tmpdir.EwllRt/simple.libsvm
+1: [16:08:41] INFO: /home/otivedani/xgboost/tests/cpp/data/../../../src/data/sparse_page_writer.h:116: SparsePageWriter Finished writing to /tmp/tmpdir.EwllRt/simple.libsvm.row.page
+1: [16:08:41] INFO: /home/otivedani/xgboost/tests/cpp/data/../../../src/data/sparse_page_source.h:367: SparsePageSource Finished writing to /tmp/tmpdir.EwllRt/simple.libsvm
+1: [       OK ] SparsePageDMatrix.Empty (2 ms)
+1: [ RUN      ] SparsePageDMatrix.MissingData
+1: [16:08:41] INFO: /home/otivedani/xgboost/tests/cpp/data/../../../src/data/sparse_page_writer.h:116: SparsePageWriter Finished writing to /tmp/tmpdir.rTaswr/simple.libsvm.row.page
+1: [16:08:41] INFO: /home/otivedani/xgboost/tests/cpp/data/../../../src/data/sparse_page_source.h:367: SparsePageSource Finished writing to /tmp/tmpdir.rTaswr/simple.libsvm
+1: [16:08:41] INFO: /home/otivedani/xgboost/tests/cpp/data/../../../src/data/sparse_page_writer.h:116: SparsePageWriter Finished writing to /tmp/tmpdir.rTaswr/simple2.libsvm.row.page
+1: [16:08:41] INFO: /home/otivedani/xgboost/tests/cpp/data/../../../src/data/sparse_page_source.h:367: SparsePageSource Finished writing to /tmp/tmpdir.rTaswr/simple2.libsvm
+1: [       OK ] SparsePageDMatrix.MissingData (1 ms)
+1: [ RUN      ] SparsePageDMatrix.EmptyRow
+1: [16:08:41] INFO: /home/otivedani/xgboost/tests/cpp/data/../../../src/data/sparse_page_writer.h:116: SparsePageWriter Finished writing to /tmp/tmpdir.1Y4cQs/simple.libsvm.row.page
+1: [16:08:41] INFO: /home/otivedani/xgboost/tests/cpp/data/../../../src/data/sparse_page_source.h:367: SparsePageSource Finished writing to /tmp/tmpdir.1Y4cQs/simple.libsvm
+1: [       OK ] SparsePageDMatrix.EmptyRow (0 ms)
+1: [ RUN      ] SparsePageDMatrix.FromDense
+1: [16:08:41] INFO: /home/otivedani/xgboost/tests/cpp/data/../../../src/data/sparse_page_writer.h:116: SparsePageWriter Finished writing to /tmp/tmpdir.WPQuht/simple.libsvm.row.page
+1: [16:08:41] INFO: /home/otivedani/xgboost/tests/cpp/data/../../../src/data/sparse_page_source.h:367: SparsePageSource Finished writing to /tmp/tmpdir.WPQuht/simple.libsvm
+1: [       OK ] SparsePageDMatrix.FromDense (1 ms)
+1: [ RUN      ] SparsePageDMatrix.FromCSC
+1: [16:08:41] INFO: /home/otivedani/xgboost/tests/cpp/data/../../../src/data/sparse_page_writer.h:116: SparsePageWriter Finished writing to /tmp/tmpdir.m6j5Ys/simple.libsvm.row.page
+1: [16:08:41] INFO: /home/otivedani/xgboost/tests/cpp/data/../../../src/data/sparse_page_source.h:367: SparsePageSource Finished writing to /tmp/tmpdir.m6j5Ys/simple.libsvm
+1: [       OK ] SparsePageDMatrix.FromCSC (5 ms)
+1: [ RUN      ] SparsePageDMatrix.FromFile
+1: [16:08:41] INFO: /home/otivedani/xgboost/tests/cpp/data/../../../src/data/sparse_page_writer.h:116: SparsePageWriter Finished writing to /tmp/tmpdir.XIhkSt/simple.libsvm.row.page
+1: [16:08:41] INFO: /home/otivedani/xgboost/tests/cpp/data/../../../src/data/sparse_page_source.h:367: SparsePageSource Finished writing to /tmp/tmpdir.XIhkSt/simple.libsvm
+1: [       OK ] SparsePageDMatrix.FromFile (18 ms)
+1: [ RUN      ] SparsePageDMatrix.EllpackPage
+1: [16:08:41] INFO: /home/otivedani/xgboost/tests/cpp/data/../../../src/data/sparse_page_writer.h:116: SparsePageWriter Finished writing to /tmp/tmpdir.P9c0Ts/simple.libsvm.cache.row.page
+1: [16:08:41] INFO: /home/otivedani/xgboost/tests/cpp/data/../../../src/data/sparse_page_source.h:367: SparsePageSource Finished writing to /tmp/tmpdir.P9c0Ts/simple.libsvm.cache
+1: [16:08:41] INFO: /home/otivedani/xgboost/src/data/sparse_page_writer.h:116: SparsePageWriter Finished writing to /tmp/tmpdir.P9c0Ts/simple.libsvm.cache.ellpack.page
+1: [       OK ] SparsePageDMatrix.EllpackPage (27 ms)
+1: [ RUN      ] SparsePageDMatrix.MultipleEllpackPages
+1: [16:08:41] INFO: /home/otivedani/xgboost/tests/cpp/data/../../../src/data/sparse_page_writer.h:116: SparsePageWriter Finished writing to /tmp/tmpdir.rB7qAq/big.libsvm.cache.row.page
+1: [16:08:41] INFO: /home/otivedani/xgboost/tests/cpp/data/../../../src/data/sparse_page_source.h:367: SparsePageSource Finished writing to /tmp/tmpdir.rB7qAq/big.libsvm.cache
+1: [16:08:41] INFO: /home/otivedani/xgboost/src/data/ellpack_page_source.cu:76: Writing .ellpack.page to /tmp/tmpdir.rB7qAq/big.libsvm.cache in 0 MB/s, 0 written
+1: [16:08:41] INFO: /home/otivedani/xgboost/src/data/ellpack_page_source.cu:76: Writing .ellpack.page to /tmp/tmpdir.rB7qAq/big.libsvm.cache in 0 MB/s, 0 written
+1: [16:08:41] INFO: /home/otivedani/xgboost/src/data/sparse_page_writer.h:116: SparsePageWriter Finished writing to /tmp/tmpdir.rB7qAq/big.libsvm.cache.ellpack.page
+1: [       OK ] SparsePageDMatrix.MultipleEllpackPages (43 ms)
+1: [ RUN      ] SparsePageDMatrix.EllpackPageContent
+1: [16:08:41] INFO: /home/otivedani/xgboost/tests/cpp/data/../../../src/data/sparse_page_writer.h:116: SparsePageWriter Finished writing to /tmp/tmpdir.U1j0Hu/big.libsvm.cache.row.page
+1: [16:08:41] INFO: /home/otivedani/xgboost/tests/cpp/data/../../../src/data/sparse_page_source.h:367: SparsePageSource Finished writing to /tmp/tmpdir.U1j0Hu/big.libsvm.cache
+1: [16:08:41] INFO: /home/otivedani/xgboost/src/data/sparse_page_writer.h:116: SparsePageWriter Finished writing to /tmp/tmpdir.U1j0Hu/big.libsvm.cache.ellpack.page
+1: [       OK ] SparsePageDMatrix.EllpackPageContent (58 ms)
+1: [ RUN      ] SparsePageDMatrix.MultipleEllpackPageContent
+1: [16:08:41] INFO: /home/otivedani/xgboost/tests/cpp/data/../../../src/data/sparse_page_writer.h:116: SparsePageWriter Finished writing to /tmp/tmpdir.h5b4Uq/big.libsvm.cache.row.page
+1: [16:08:41] INFO: /home/otivedani/xgboost/tests/cpp/data/../../../src/data/sparse_page_source.h:367: SparsePageSource Finished writing to /tmp/tmpdir.h5b4Uq/big.libsvm.cache
+1: [16:08:42] INFO: /home/otivedani/xgboost/src/data/ellpack_page_source.cu:76: Writing .ellpack.page to /tmp/tmpdir.h5b4Uq/big.libsvm.cache in 0 MB/s, 0 written
+1: [16:08:42] INFO: /home/otivedani/xgboost/src/data/ellpack_page_source.cu:76: Writing .ellpack.page to /tmp/tmpdir.h5b4Uq/big.libsvm.cache in 0 MB/s, 0 written
+1: [16:08:42] INFO: /home/otivedani/xgboost/src/data/ellpack_page_source.cu:76: Writing .ellpack.page to /tmp/tmpdir.h5b4Uq/big.libsvm.cache in 0 MB/s, 0 written
+1: [16:08:42] INFO: /home/otivedani/xgboost/src/data/ellpack_page_source.cu:76: Writing .ellpack.page to /tmp/tmpdir.h5b4Uq/big.libsvm.cache in 0 MB/s, 0 written
+1: [16:08:42] INFO: /home/otivedani/xgboost/src/data/sparse_page_writer.h:116: SparsePageWriter Finished writing to /tmp/tmpdir.h5b4Uq/big.libsvm.cache.ellpack.page
+1: [       OK ] SparsePageDMatrix.MultipleEllpackPageContent (106 ms)
+1: [ RUN      ] SparsePageDMatrix.EllpackPageMultipleLoops
+1: [16:08:42] INFO: /home/otivedani/xgboost/tests/cpp/data/../../../src/data/sparse_page_writer.h:116: SparsePageWriter Finished writing to /tmp/tmpdir.lSsLVq/big.libsvm.cache.row.page
+1: [16:08:42] INFO: /home/otivedani/xgboost/tests/cpp/data/../../../src/data/sparse_page_source.h:367: SparsePageSource Finished writing to /tmp/tmpdir.lSsLVq/big.libsvm.cache
+1: [16:08:42] INFO: /home/otivedani/xgboost/src/data/ellpack_page_source.cu:76: Writing .ellpack.page to /tmp/tmpdir.lSsLVq/big.libsvm.cache in 0 MB/s, 0 written
+1: [16:08:42] INFO: /home/otivedani/xgboost/src/data/ellpack_page_source.cu:76: Writing .ellpack.page to /tmp/tmpdir.lSsLVq/big.libsvm.cache in 0 MB/s, 0 written
+1: [16:08:42] INFO: /home/otivedani/xgboost/src/data/ellpack_page_source.cu:76: Writing .ellpack.page to /tmp/tmpdir.lSsLVq/big.libsvm.cache in 0 MB/s, 0 written
+1: [16:08:42] INFO: /home/otivedani/xgboost/src/data/ellpack_page_source.cu:76: Writing .ellpack.page to /tmp/tmpdir.lSsLVq/big.libsvm.cache in 0 MB/s, 0 written
+1: [16:08:42] INFO: /home/otivedani/xgboost/src/data/sparse_page_writer.h:116: SparsePageWriter Finished writing to /tmp/tmpdir.lSsLVq/big.libsvm.cache.ellpack.page
+1: [       OK ] SparsePageDMatrix.EllpackPageMultipleLoops (81 ms)
+1: [----------] 17 tests from SparsePageDMatrix (622 ms total)
+1: 
+1: [----------] 1 test from GBLinear
+1: [ RUN      ] GBLinear.JsonIO
+1: [       OK ] GBLinear.JsonIO (6 ms)
+1: [----------] 1 test from GBLinear (6 ms total)
+1: 
+1: [----------] 4 tests from GBTree
+1: [ RUN      ] GBTree.SelectTreeMethod
+1: [16:08:42] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:177: Tree method is selected to be 'hist', which uses a single updater grow_quantile_histmaker.
+1: [16:08:42] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:177: Tree method is selected to be 'hist', which uses a single updater grow_quantile_histmaker.
+1: [       OK ] GBTree.SelectTreeMethod (0 ms)
+1: [ RUN      ] GBTree.WrongUpdater
+1: [16:08:42] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:177: Tree method is selected to be 'hist', which uses a single updater grow_quantile_histmaker.
+1: [16:08:42] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:177: Tree method is selected to be 'hist', which uses a single updater grow_quantile_histmaker.
+1: [       OK ] GBTree.WrongUpdater (0 ms)
+1: [ RUN      ] GBTree.ChoosePredictor
+1: unknown file: Failure
+1: C++ exception with description "[16:08:42] /home/otivedani/xgboost/tests/cpp/tree/../../../src/tree/updater_gpu_hist.cu:786: Exception in gpu_hist: NCCL failure :unhandled system error /home/otivedani/xgboost/src/common/device_helpers.cu(71)
+1: 
+1: Stack trace:
+1:   [bt] (0) /home/otivedani/xgboost/build/testxgboost(+0x1327e9) [0x561e2ab557e9]
+1:   [bt] (1) /home/otivedani/xgboost/build/testxgboost(+0x4465f2) [0x561e2ae695f2]
+1:   [bt] (2) /home/otivedani/xgboost/build/testxgboost(+0x4f7d29) [0x561e2af1ad29]
+1:   [bt] (3) /home/otivedani/xgboost/build/testxgboost(+0x4f8c01) [0x561e2af1bc01]
+1:   [bt] (4) /home/otivedani/xgboost/build/testxgboost(+0x522602) [0x561e2af45602]
+1:   [bt] (5) /home/otivedani/xgboost/build/testxgboost(+0x23105e) [0x561e2ac5405e]
+1:   [bt] (6) /home/otivedani/xgboost/build/testxgboost(+0x8e8a11) [0x561e2b30ba11]
+1:   [bt] (7) /home/otivedani/xgboost/build/testxgboost(+0x8de586) [0x561e2b301586]
+1:   [bt] (8) /home/otivedani/xgboost/build/testxgboost(+0x8de6e5) [0x561e2b3016e5]
+1: 
+1: " thrown in the test body.
+1: [  FAILED  ] GBTree.ChoosePredictor (11 ms)
+1: [ RUN      ] GBTree.JsonIO
+1: [16:08:42] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 12 extra nodes, 0 pruned nodes, max_depth=5
+1: [       OK ] GBTree.JsonIO (42 ms)
+1: [----------] 4 tests from GBTree (53 ms total)
+1: 
+1: [----------] 2 tests from Dart
+1: [ RUN      ] Dart.JsonIO
+1: [16:08:42] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 12 extra nodes, 0 pruned nodes, max_depth=5
+1: [16:08:42] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:685: drop 0 trees, weight = 1
+1: [       OK ] Dart.JsonIO (46 ms)
+1: [ RUN      ] Dart.Prediction
+1: [16:08:42] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=3
+1: [16:08:42] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:685: drop 0 trees, weight = 1
+1: [16:08:42] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=3
+1: [16:08:42] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:685: drop 0 trees, weight = 1
+1: [16:08:42] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=3
+1: [16:08:42] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:685: drop 0 trees, weight = 1
+1: [16:08:42] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=3
+1: [16:08:42] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:685: drop 1 trees, weight = 0.769231
+1: [16:08:42] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=3
+1: [16:08:42] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:685: drop 3 trees, weight = 0.30303
+1: [16:08:42] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=3
+1: [16:08:42] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:685: drop 3 trees, weight = 0.30303
+1: [16:08:42] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=3
+1: [16:08:42] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:685: drop 2 trees, weight = 0.434783
+1: [16:08:42] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=3
+1: [16:08:42] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:685: drop 3 trees, weight = 0.30303
+1: [16:08:42] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=3
+1: [16:08:42] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:685: drop 7 trees, weight = 0.136986
+1: [16:08:42] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=3
+1: [16:08:42] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:685: drop 6 trees, weight = 0.15873
+1: [16:08:42] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=3
+1: [16:08:42] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:685: drop 3 trees, weight = 0.30303
+1: [16:08:42] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=3
+1: [16:08:42] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:685: drop 7 trees, weight = 0.136986
+1: [16:08:42] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=3
+1: [16:08:42] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:685: drop 7 trees, weight = 0.136986
+1: [16:08:42] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=3
+1: [16:08:42] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:685: drop 7 trees, weight = 0.136986
+1: [16:08:42] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=3
+1: [16:08:42] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:685: drop 6 trees, weight = 0.15873
+1: [16:08:42] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=3
+1: [16:08:42] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:685: drop 5 trees, weight = 0.188679
+1: [       OK ] Dart.Prediction (455 ms)
+1: [----------] 2 tests from Dart (501 ms total)
+1: 
+1: [----------] 3 tests from Linear
+1: [ RUN      ] Linear.Shotgun
+1: [       OK ] Linear.Shotgun (8 ms)
+1: [ RUN      ] Linear.coordinate
+1: [       OK ] Linear.coordinate (23 ms)
+1: [ RUN      ] Linear.GPUCoordinate
+1: [       OK ] Linear.GPUCoordinate (13 ms)
+1: [----------] 3 tests from Linear (44 ms total)
+1: 
+1: [----------] 1 test from Shotgun
+1: [ RUN      ] Shotgun.JsonIO
+1: [       OK ] Shotgun.JsonIO (0 ms)
+1: [----------] 1 test from Shotgun (0 ms total)
+1: 
+1: [----------] 1 test from Coordinate
+1: [ RUN      ] Coordinate.JsonIO
+1: [       OK ] Coordinate.JsonIO (0 ms)
+1: [----------] 1 test from Coordinate (0 ms total)
+1: 
+1: [----------] 37 tests from Metric
+1: [ RUN      ] Metric.RMSE
+1: [       OK ] Metric.RMSE (2 ms)
+1: [ RUN      ] Metric.RMSLE
+1: [       OK ] Metric.RMSLE (3 ms)
+1: [ RUN      ] Metric.MAE
+1: [       OK ] Metric.MAE (2 ms)
+1: [ RUN      ] Metric.MAPE
+1: [       OK ] Metric.MAPE (2 ms)
+1: [ RUN      ] Metric.MPHE
+1: [       OK ] Metric.MPHE (2 ms)
+1: [ RUN      ] Metric.LogLoss
+1: [       OK ] Metric.LogLoss (2 ms)
+1: [ RUN      ] Metric.Error
+1: [       OK ] Metric.Error (6 ms)
+1: [ RUN      ] Metric.PoissionNegLogLik
+1: [       OK ] Metric.PoissionNegLogLik (3 ms)
+1: [ RUN      ] Metric.UnknownMetric
+1: [       OK ] Metric.UnknownMetric (0 ms)
+1: [ RUN      ] Metric.MultiClassError
+1: [       OK ] Metric.MultiClassError (2 ms)
+1: [ RUN      ] Metric.MultiClassLogLoss
+1: [       OK ] Metric.MultiClassLogLoss (3 ms)
+1: [ RUN      ] Metric.AMS
+1: [16:08:42] INFO: /home/otivedani/xgboost/src/metric/rank_metric.cc:142: best-ams-ratio=0
+1: [       OK ] Metric.AMS (4 ms)
+1: [ RUN      ] Metric.AUC
+1: [       OK ] Metric.AUC (32 ms)
+1: [ RUN      ] Metric.AUCPR
+1: [       OK ] Metric.AUCPR (43 ms)
+1: [ RUN      ] Metric.Precision
+1: [       OK ] Metric.Precision (8 ms)
+1: [ RUN      ] Metric.NDCG
+1: [       OK ] Metric.NDCG (30 ms)
+1: [ RUN      ] Metric.MAP
+1: [       OK ] Metric.MAP (19 ms)
+1: [ RUN      ] Metric.AFTNegLogLik
+1: [       OK ] Metric.AFTNegLogLik (4 ms)
+1: [ RUN      ] Metric.IntervalRegressionAccuracy
+1: [       OK ] Metric.IntervalRegressionAccuracy (7 ms)
+1: [ RUN      ] Metric.GPURMSE
+1: [       OK ] Metric.GPURMSE (5 ms)
+1: [ RUN      ] Metric.GPURMSLE
+1: [       OK ] Metric.GPURMSLE (4 ms)
+1: [ RUN      ] Metric.GPUMAE
+1: [       OK ] Metric.GPUMAE (5 ms)
+1: [ RUN      ] Metric.GPUMAPE
+1: [       OK ] Metric.GPUMAPE (4 ms)
+1: [ RUN      ] Metric.GPUMPHE
+1: [       OK ] Metric.GPUMPHE (5 ms)
+1: [ RUN      ] Metric.GPULogLoss
+1: [       OK ] Metric.GPULogLoss (4 ms)
+1: [ RUN      ] Metric.GPUError
+1: [       OK ] Metric.GPUError (9 ms)
+1: [ RUN      ] Metric.GPUPoissionNegLogLik
+1: [       OK ] Metric.GPUPoissionNegLogLik (5 ms)
+1: [ RUN      ] Metric.GPUMultiClassError
+1: [       OK ] Metric.GPUMultiClassError (4 ms)
+1: [ RUN      ] Metric.GPUMultiClassLogLoss
+1: [       OK ] Metric.GPUMultiClassLogLoss (5 ms)
+1: [ RUN      ] Metric.MGPU_MultiClassError
+1: [16:08:42] WARNING: /home/otivedani/xgboost/tests/cpp/metric/test_multiclass_metric.cc:54: Not testing in multi-gpu environment.
+1: [       OK ] Metric.MGPU_MultiClassError (0 ms)
+1: [ RUN      ] Metric.GPUAUC
+1: [       OK ] Metric.GPUAUC (73 ms)
+1: [ RUN      ] Metric.GPUAUCPR
+1: [       OK ] Metric.GPUAUCPR (58 ms)
+1: [ RUN      ] Metric.GPUPrecision
+1: [       OK ] Metric.GPUPrecision (18 ms)
+1: [ RUN      ] Metric.GPUNDCG
+1: [       OK ] Metric.GPUNDCG (81 ms)
+1: [ RUN      ] Metric.GPUMAP
+1: [       OK ] Metric.GPUMAP (35 ms)
+1: [ RUN      ] Metric.GPUAFTNegLogLik
+1: [       OK ] Metric.GPUAFTNegLogLik (4 ms)
+1: [ RUN      ] Metric.GPUIntervalRegressionAccuracy
+1: [       OK ] Metric.GPUIntervalRegressionAccuracy (6 ms)
+1: [----------] 37 tests from Metric (501 ms total)
+1: 
+1: [----------] 2 tests from AFTNegLogLikMetric
+1: [ RUN      ] AFTNegLogLikMetric.Configuration
+1: [       OK ] AFTNegLogLikMetric.Configuration (0 ms)
+1: [ RUN      ] AFTNegLogLikMetric.GPUConfiguration
+1: [       OK ] AFTNegLogLikMetric.GPUConfiguration (0 ms)
+1: [----------] 2 tests from AFTNegLogLikMetric (1 ms total)
+1: 
+1: [----------] 63 tests from Objective
+1: [ RUN      ] Objective.AFTObjConfiguration
+1: [       OK ] Objective.AFTObjConfiguration (0 ms)
+1: [ RUN      ] Objective.AFTObjGPairUncensoredLabels
+1: [       OK ] Objective.AFTObjGPairUncensoredLabels (3 ms)
+1: [ RUN      ] Objective.AFTObjGPairLeftCensoredLabels
+1: [       OK ] Objective.AFTObjGPairLeftCensoredLabels (4 ms)
+1: [ RUN      ] Objective.AFTObjGPairRightCensoredLabels
+1: [       OK ] Objective.AFTObjGPairRightCensoredLabels (5 ms)
+1: [ RUN      ] Objective.AFTObjGPairIntervalCensoredLabels
+1: [       OK ] Objective.AFTObjGPairIntervalCensoredLabels (4 ms)
+1: [ RUN      ] Objective.HingeObj
+1: [       OK ] Objective.HingeObj (2 ms)
+1: [ RUN      ] Objective.SoftmaxMultiClassObjGPair
+1: [       OK ] Objective.SoftmaxMultiClassObjGPair (2 ms)
+1: [ RUN      ] Objective.SoftmaxMultiClassBasic
+1: [       OK ] Objective.SoftmaxMultiClassBasic (1 ms)
+1: [ RUN      ] Objective.SoftprobMultiClassBasic
+1: [       OK ] Objective.SoftprobMultiClassBasic (1 ms)
+1: [ RUN      ] Objective.UnknownFunction
+1: [       OK ] Objective.UnknownFunction (0 ms)
+1: [ RUN      ] Objective.PairwiseRankingGPair
+1: [       OK ] Objective.PairwiseRankingGPair (5 ms)
+1: [ RUN      ] Objective.NDCG_JsonIO
+1: [       OK ] Objective.NDCG_JsonIO (0 ms)
+1: [ RUN      ] Objective.PairwiseRankingGPairSameLabels
+1: [       OK ] Objective.PairwiseRankingGPairSameLabels (2 ms)
+1: [ RUN      ] Objective.NDCGRankingGPair
+1: [       OK ] Objective.NDCGRankingGPair (5 ms)
+1: [ RUN      ] Objective.MAPRankingGPair
+1: [       OK ] Objective.MAPRankingGPair (4 ms)
+1: [ RUN      ] Objective.LinearRegressionGPair
+1: [       OK ] Objective.LinearRegressionGPair (2 ms)
+1: [ RUN      ] Objective.SquaredLog
+1: [       OK ] Objective.SquaredLog (3 ms)
+1: [ RUN      ] Objective.PseudoHuber
+1: [       OK ] Objective.PseudoHuber (3 ms)
+1: [ RUN      ] Objective.LogisticRegressionGPair
+1: [       OK ] Objective.LogisticRegressionGPair (2 ms)
+1: [ RUN      ] Objective.LogisticRegressionBasic
+1: [       OK ] Objective.LogisticRegressionBasic (3 ms)
+1: [ RUN      ] Objective.LogisticRawGPair
+1: [       OK ] Objective.LogisticRawGPair (1 ms)
+1: [ RUN      ] Objective.PoissonRegressionGPair
+1: [       OK ] Objective.PoissonRegressionGPair (2 ms)
+1: [ RUN      ] Objective.PoissonRegressionBasic
+1: [       OK ] Objective.PoissonRegressionBasic (2 ms)
+1: [ RUN      ] Objective.GammaRegressionGPair
+1: [       OK ] Objective.GammaRegressionGPair (2 ms)
+1: [ RUN      ] Objective.GammaRegressionBasic
+1: [       OK ] Objective.GammaRegressionBasic (3 ms)
+1: [ RUN      ] Objective.TweedieRegressionGPair
+1: [       OK ] Objective.TweedieRegressionGPair (2 ms)
+1: [ RUN      ] Objective.TweedieRegressionBasic
+1: [       OK ] Objective.TweedieRegressionBasic (3 ms)
+1: [ RUN      ] Objective.CoxRegressionGPair
+1: [       OK ] Objective.CoxRegressionGPair (0 ms)
+1: [ RUN      ] Objective.GPUAFTObjConfiguration
+1: [       OK ] Objective.GPUAFTObjConfiguration (0 ms)
+1: [ RUN      ] Objective.GPUAFTObjGPairUncensoredLabels
+1: [       OK ] Objective.GPUAFTObjGPairUncensoredLabels (11 ms)
+1: [ RUN      ] Objective.GPUAFTObjGPairLeftCensoredLabels
+1: [       OK ] Objective.GPUAFTObjGPairLeftCensoredLabels (12 ms)
+1: [ RUN      ] Objective.GPUAFTObjGPairRightCensoredLabels
+1: [       OK ] Objective.GPUAFTObjGPairRightCensoredLabels (12 ms)
+1: [ RUN      ] Objective.GPUAFTObjGPairIntervalCensoredLabels
+1: [       OK ] Objective.GPUAFTObjGPairIntervalCensoredLabels (11 ms)
+1: [ RUN      ] Objective.GPUHingeObj
+1: [       OK ] Objective.GPUHingeObj (8 ms)
+1: [ RUN      ] Objective.GPUSoftmaxMultiClassObjGPair
+1: [       OK ] Objective.GPUSoftmaxMultiClassObjGPair (8 ms)
+1: [ RUN      ] Objective.GPUSoftmaxMultiClassBasic
+1: [       OK ] Objective.GPUSoftmaxMultiClassBasic (3 ms)
+1: [ RUN      ] Objective.GPUSoftprobMultiClassBasic
+1: [       OK ] Objective.GPUSoftprobMultiClassBasic (2 ms)
+1: [ RUN      ] Objective.GPUPairwiseRankingGPair
+1: [       OK ] Objective.GPUPairwiseRankingGPair (15 ms)
+1: [ RUN      ] Objective.GPUNDCG_JsonIO
+1: [       OK ] Objective.GPUNDCG_JsonIO (0 ms)
+1: [ RUN      ] Objective.GPUPairwiseRankingGPairSameLabels
+1: [       OK ] Objective.GPUPairwiseRankingGPairSameLabels (9 ms)
+1: [ RUN      ] Objective.GPUNDCGRankingGPair
+1: [       OK ] Objective.GPUNDCGRankingGPair (24 ms)
+1: [ RUN      ] Objective.GPUMAPRankingGPair
+1: [       OK ] Objective.GPUMAPRankingGPair (25 ms)
+1: [ RUN      ] Objective.RankSegmentSorterTest
+1: [       OK ] Objective.RankSegmentSorterTest (6 ms)
+1: [ RUN      ] Objective.RankSegmentSorterSingleGroupTest
+1: [       OK ] Objective.RankSegmentSorterSingleGroupTest (4 ms)
+1: [ RUN      ] Objective.RankSegmentSorterAscendingTest
+1: [       OK ] Objective.RankSegmentSorterAscendingTest (6 ms)
+1: [ RUN      ] Objective.RankItemCountOnLeft
+1: [       OK ] Objective.RankItemCountOnLeft (0 ms)
+1: [ RUN      ] Objective.RankItemCountOnRight
+1: [       OK ] Objective.RankItemCountOnRight (0 ms)
+1: [ RUN      ] Objective.NDCGLambdaWeightComputerTest
+1: [       OK ] Objective.NDCGLambdaWeightComputerTest (12 ms)
+1: [ RUN      ] Objective.IndexableSortedItemsTest
+1: [       OK ] Objective.IndexableSortedItemsTest (7 ms)
+1: [ RUN      ] Objective.ComputeAndCompareMAPStatsTest
+1: [       OK ] Objective.ComputeAndCompareMAPStatsTest (11 ms)
+1: [ RUN      ] Objective.GPULinearRegressionGPair
+1: [       OK ] Objective.GPULinearRegressionGPair (10 ms)
+1: [ RUN      ] Objective.GPUSquaredLog
+1: [       OK ] Objective.GPUSquaredLog (10 ms)
+1: [ RUN      ] Objective.GPUPseudoHuber
+1: [       OK ] Objective.GPUPseudoHuber (10 ms)
+1: [ RUN      ] Objective.GPULogisticRegressionGPair
+1: [       OK ] Objective.GPULogisticRegressionGPair (5 ms)
+1: [ RUN      ] Objective.GPULogisticRegressionBasic
+1: [       OK ] Objective.GPULogisticRegressionBasic (6 ms)
+1: [ RUN      ] Objective.GPULogisticRawGPair
+1: [       OK ] Objective.GPULogisticRawGPair (6 ms)
+1: [ RUN      ] Objective.GPUPoissonRegressionGPair
+1: [       OK ] Objective.GPUPoissonRegressionGPair (9 ms)
+1: [ RUN      ] Objective.GPUPoissonRegressionBasic
+1: [       OK ] Objective.GPUPoissonRegressionBasic (6 ms)
+1: [ RUN      ] Objective.GPUGammaRegressionGPair
+1: [       OK ] Objective.GPUGammaRegressionGPair (9 ms)
+1: [ RUN      ] Objective.GPUGammaRegressionBasic
+1: [       OK ] Objective.GPUGammaRegressionBasic (7 ms)
+1: [ RUN      ] Objective.GPUTweedieRegressionGPair
+1: [       OK ] Objective.GPUTweedieRegressionGPair (10 ms)
+1: [ RUN      ] Objective.CPU_vs_CUDA
+1: [       OK ] Objective.CPU_vs_CUDA (10 ms)
+1: [ RUN      ] Objective.GPUTweedieRegressionBasic
+1: [       OK ] Objective.GPUTweedieRegressionBasic (7 ms)
+1: [----------] 63 tests from Objective (357 ms total)
+1: 
+1: [----------] 1 test from Plugin
+1: [ RUN      ] Plugin.ExampleObjective
+1: [       OK ] Plugin.ExampleObjective (0 ms)
+1: [----------] 1 test from Plugin (0 ms total)
+1: 
+1: [----------] 4 tests from CpuPredictor
+1: [ RUN      ] CpuPredictor.Basic
+1: [       OK ] CpuPredictor.Basic (9 ms)
+1: [ RUN      ] CpuPredictor.ExternalMemory
+1: [16:08:43] INFO: /home/otivedani/xgboost/tests/cpp/data/../../../src/data/sparse_page_writer.h:116: SparsePageWriter Finished writing to /tmp/tmpdir.Wp21ju/big.libsvm.cache.row.page
+1: [16:08:43] INFO: /home/otivedani/xgboost/tests/cpp/data/../../../src/data/sparse_page_source.h:367: SparsePageSource Finished writing to /tmp/tmpdir.Wp21ju/big.libsvm.cache
+1: [       OK ] CpuPredictor.ExternalMemory (25 ms)
+1: [ RUN      ] CpuPredictor.InplacePredict
+1: [16:08:43] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 10 extra nodes, 0 pruned nodes, max_depth=4
+1: [16:08:43] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 14 extra nodes, 0 pruned nodes, max_depth=5
+1: [16:08:43] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 14 extra nodes, 0 pruned nodes, max_depth=4
+1: [16:08:43] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 14 extra nodes, 0 pruned nodes, max_depth=4
+1: [16:08:43] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 12 extra nodes, 0 pruned nodes, max_depth=4
+1: [16:08:43] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 12 extra nodes, 0 pruned nodes, max_depth=4
+1: [16:08:43] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 16 extra nodes, 0 pruned nodes, max_depth=4
+1: [16:08:43] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 14 extra nodes, 0 pruned nodes, max_depth=5
+1: [16:08:44] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 12 extra nodes, 0 pruned nodes, max_depth=5
+1: [16:08:44] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 12 extra nodes, 0 pruned nodes, max_depth=3
+1: [16:08:44] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:44] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 10 extra nodes, 0 pruned nodes, max_depth=3
+1: [16:08:44] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 10 extra nodes, 0 pruned nodes, max_depth=4
+1: [16:08:44] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 10 extra nodes, 0 pruned nodes, max_depth=4
+1: [16:08:44] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 10 extra nodes, 0 pruned nodes, max_depth=4
+1: [16:08:44] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 10 extra nodes, 0 pruned nodes, max_depth=3
+1: [16:08:44] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 10 extra nodes, 0 pruned nodes, max_depth=3
+1: [16:08:44] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 14 extra nodes, 0 pruned nodes, max_depth=4
+1: [16:08:44] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 16 extra nodes, 0 pruned nodes, max_depth=4
+1: [16:08:44] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 12 extra nodes, 0 pruned nodes, max_depth=5
+1: [16:08:44] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 14 extra nodes, 0 pruned nodes, max_depth=5
+1: [16:08:44] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 12 extra nodes, 0 pruned nodes, max_depth=4
+1: [16:08:44] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 12 extra nodes, 0 pruned nodes, max_depth=5
+1: [16:08:44] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 12 extra nodes, 0 pruned nodes, max_depth=4
+1: [16:08:44] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 10 extra nodes, 0 pruned nodes, max_depth=4
+1: [16:08:44] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 12 extra nodes, 0 pruned nodes, max_depth=5
+1: [16:08:44] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 12 extra nodes, 0 pruned nodes, max_depth=4
+1: [16:08:44] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 12 extra nodes, 0 pruned nodes, max_depth=4
+1: [16:08:44] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 10 extra nodes, 0 pruned nodes, max_depth=3
+1: [16:08:44] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 8 extra nodes, 0 pruned nodes, max_depth=3
+1: [16:08:44] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 10 extra nodes, 0 pruned nodes, max_depth=4
+1: [16:08:44] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 12 extra nodes, 0 pruned nodes, max_depth=4
+1: [16:08:44] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 10 extra nodes, 0 pruned nodes, max_depth=4
+1: [16:08:44] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 12 extra nodes, 0 pruned nodes, max_depth=5
+1: [16:08:44] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 14 extra nodes, 0 pruned nodes, max_depth=5
+1: [16:08:44] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 12 extra nodes, 0 pruned nodes, max_depth=4
+1: [16:08:44] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 16 extra nodes, 0 pruned nodes, max_depth=5
+1: [16:08:44] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 20 extra nodes, 0 pruned nodes, max_depth=5
+1: [16:08:44] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 14 extra nodes, 0 pruned nodes, max_depth=5
+1: [16:08:44] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 10 extra nodes, 0 pruned nodes, max_depth=3
+1: [16:08:45] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 16 extra nodes, 0 pruned nodes, max_depth=5
+1: [16:08:45] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 8 extra nodes, 0 pruned nodes, max_depth=3
+1: [16:08:45] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 10 extra nodes, 0 pruned nodes, max_depth=3
+1: [16:08:45] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 14 extra nodes, 0 pruned nodes, max_depth=4
+1: [16:08:45] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 14 extra nodes, 0 pruned nodes, max_depth=3
+1: [16:08:45] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 10 extra nodes, 0 pruned nodes, max_depth=3
+1: [16:08:45] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 12 extra nodes, 0 pruned nodes, max_depth=5
+1: [16:08:45] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 10 extra nodes, 0 pruned nodes, max_depth=3
+1: [16:08:45] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 14 extra nodes, 0 pruned nodes, max_depth=5
+1: [16:08:45] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 14 extra nodes, 0 pruned nodes, max_depth=5
+1: [16:08:45] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 12 extra nodes, 0 pruned nodes, max_depth=4
+1: [16:08:45] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 12 extra nodes, 0 pruned nodes, max_depth=5
+1: [16:08:45] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 12 extra nodes, 0 pruned nodes, max_depth=4
+1: [16:08:45] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 14 extra nodes, 0 pruned nodes, max_depth=4
+1: [16:08:45] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 18 extra nodes, 0 pruned nodes, max_depth=4
+1: [16:08:45] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 14 extra nodes, 0 pruned nodes, max_depth=6
+1: [16:08:45] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 10 extra nodes, 0 pruned nodes, max_depth=3
+1: [16:08:45] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 14 extra nodes, 0 pruned nodes, max_depth=4
+1: [16:08:45] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 14 extra nodes, 0 pruned nodes, max_depth=4
+1: [16:08:45] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 10 extra nodes, 0 pruned nodes, max_depth=3
+1: [16:08:45] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 10 extra nodes, 0 pruned nodes, max_depth=3
+1: [16:08:45] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 10 extra nodes, 0 pruned nodes, max_depth=3
+1: [16:08:45] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 10 extra nodes, 0 pruned nodes, max_depth=3
+1: [16:08:45] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 10 extra nodes, 0 pruned nodes, max_depth=3
+1: [16:08:45] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 10 extra nodes, 0 pruned nodes, max_depth=4
+1: [16:08:45] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 14 extra nodes, 0 pruned nodes, max_depth=5
+1: [16:08:45] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 14 extra nodes, 0 pruned nodes, max_depth=4
+1: [16:08:45] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 14 extra nodes, 0 pruned nodes, max_depth=4
+1: [16:08:45] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 12 extra nodes, 0 pruned nodes, max_depth=4
+1: [16:08:45] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 12 extra nodes, 0 pruned nodes, max_depth=4
+1: [16:08:45] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 16 extra nodes, 0 pruned nodes, max_depth=4
+1: [16:08:45] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 14 extra nodes, 0 pruned nodes, max_depth=5
+1: [16:08:46] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 12 extra nodes, 0 pruned nodes, max_depth=5
+1: [16:08:46] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 12 extra nodes, 0 pruned nodes, max_depth=3
+1: [16:08:46] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:46] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 10 extra nodes, 0 pruned nodes, max_depth=3
+1: [16:08:46] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 10 extra nodes, 0 pruned nodes, max_depth=4
+1: [16:08:46] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 10 extra nodes, 0 pruned nodes, max_depth=4
+1: [16:08:46] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 10 extra nodes, 0 pruned nodes, max_depth=4
+1: [16:08:46] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 10 extra nodes, 0 pruned nodes, max_depth=3
+1: [16:08:46] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 10 extra nodes, 0 pruned nodes, max_depth=3
+1: [16:08:46] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 14 extra nodes, 0 pruned nodes, max_depth=4
+1: [16:08:46] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 16 extra nodes, 0 pruned nodes, max_depth=4
+1: [16:08:46] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 12 extra nodes, 0 pruned nodes, max_depth=5
+1: [16:08:46] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 14 extra nodes, 0 pruned nodes, max_depth=5
+1: [16:08:46] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 12 extra nodes, 0 pruned nodes, max_depth=4
+1: [16:08:46] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 12 extra nodes, 0 pruned nodes, max_depth=5
+1: [16:08:46] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 12 extra nodes, 0 pruned nodes, max_depth=4
+1: [16:08:46] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 10 extra nodes, 0 pruned nodes, max_depth=4
+1: [16:08:46] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 12 extra nodes, 0 pruned nodes, max_depth=5
+1: [16:08:46] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 12 extra nodes, 0 pruned nodes, max_depth=4
+1: [16:08:46] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 12 extra nodes, 0 pruned nodes, max_depth=4
+1: [16:08:46] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 10 extra nodes, 0 pruned nodes, max_depth=3
+1: [16:08:46] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 8 extra nodes, 0 pruned nodes, max_depth=3
+1: [16:08:46] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 10 extra nodes, 0 pruned nodes, max_depth=4
+1: [16:08:46] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 12 extra nodes, 0 pruned nodes, max_depth=4
+1: [16:08:46] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 10 extra nodes, 0 pruned nodes, max_depth=4
+1: [16:08:46] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 12 extra nodes, 0 pruned nodes, max_depth=5
+1: [16:08:46] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 14 extra nodes, 0 pruned nodes, max_depth=5
+1: [16:08:46] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 12 extra nodes, 0 pruned nodes, max_depth=4
+1: [16:08:46] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 16 extra nodes, 0 pruned nodes, max_depth=5
+1: [16:08:46] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 20 extra nodes, 0 pruned nodes, max_depth=5
+1: [16:08:46] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 14 extra nodes, 0 pruned nodes, max_depth=5
+1: [16:08:46] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 10 extra nodes, 0 pruned nodes, max_depth=3
+1: [16:08:47] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 16 extra nodes, 0 pruned nodes, max_depth=5
+1: [16:08:47] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 8 extra nodes, 0 pruned nodes, max_depth=3
+1: [16:08:47] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 10 extra nodes, 0 pruned nodes, max_depth=3
+1: [16:08:47] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 14 extra nodes, 0 pruned nodes, max_depth=4
+1: [16:08:47] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 14 extra nodes, 0 pruned nodes, max_depth=3
+1: [16:08:47] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 10 extra nodes, 0 pruned nodes, max_depth=3
+1: [16:08:47] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 12 extra nodes, 0 pruned nodes, max_depth=5
+1: [16:08:47] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 10 extra nodes, 0 pruned nodes, max_depth=3
+1: [16:08:47] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 14 extra nodes, 0 pruned nodes, max_depth=5
+1: [16:08:47] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 14 extra nodes, 0 pruned nodes, max_depth=5
+1: [16:08:47] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 12 extra nodes, 0 pruned nodes, max_depth=4
+1: [16:08:47] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 12 extra nodes, 0 pruned nodes, max_depth=5
+1: [16:08:47] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 12 extra nodes, 0 pruned nodes, max_depth=4
+1: [16:08:47] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 14 extra nodes, 0 pruned nodes, max_depth=4
+1: [16:08:47] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 18 extra nodes, 0 pruned nodes, max_depth=4
+1: [16:08:47] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 14 extra nodes, 0 pruned nodes, max_depth=6
+1: [16:08:47] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 10 extra nodes, 0 pruned nodes, max_depth=3
+1: [16:08:47] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 14 extra nodes, 0 pruned nodes, max_depth=4
+1: [16:08:47] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 14 extra nodes, 0 pruned nodes, max_depth=4
+1: [16:08:47] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 10 extra nodes, 0 pruned nodes, max_depth=3
+1: [16:08:47] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 10 extra nodes, 0 pruned nodes, max_depth=3
+1: [16:08:47] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 10 extra nodes, 0 pruned nodes, max_depth=3
+1: [16:08:47] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 10 extra nodes, 0 pruned nodes, max_depth=3
+1: [16:08:47] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 10 extra nodes, 0 pruned nodes, max_depth=3
+1: [       OK ] CpuPredictor.InplacePredict (4078 ms)
+1: [ RUN      ] CpuPredictor.LesserFeatures
+1: [16:08:47] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 94 extra nodes, 0 pruned nodes, max_depth=6
+1: [16:08:47] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 94 extra nodes, 0 pruned nodes, max_depth=6
+1: [16:08:48] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 82 extra nodes, 0 pruned nodes, max_depth=6
+1: [16:08:48] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 40 extra nodes, 0 pruned nodes, max_depth=6
+1: [       OK ] CpuPredictor.LesserFeatures (377 ms)
+1: [----------] 4 tests from CpuPredictor (4489 ms total)
+1: 
+1: [----------] 1 test from Predictor
+1: [ RUN      ] Predictor.PredictionCache
+1: [       OK ] Predictor.PredictionCache (0 ms)
+1: [----------] 1 test from Predictor (0 ms total)
+1: 
+1: [----------] 3 tests from AllreduceBase
+1: [ RUN      ] AllreduceBase.InitTask
+1: [       OK ] AllreduceBase.InitTask (0 ms)
+1: [ RUN      ] AllreduceBase.InitWithCacheOn
+1: [       OK ] AllreduceBase.InitWithCacheOn (0 ms)
+1: [ RUN      ] AllreduceBase.InitWithRingReduce
+1: [       OK ] AllreduceBase.InitWithRingReduce (0 ms)
+1: [----------] 3 tests from AllreduceBase (0 ms total)
+1: 
+1: [----------] 3 tests from AllreduceMock
+1: [ RUN      ] AllreduceMock.MockAllreduce
+1: [0]@@@Hit Mock Error:AllReduce , rabit is configured to keep process running
+1: [       OK ] AllreduceMock.MockAllreduce (0 ms)
+1: [ RUN      ] AllreduceMock.MockBroadcast
+1: [0]@@@Hit Mock Error:Broadcast , rabit is configured to keep process running
+1: [       OK ] AllreduceMock.MockBroadcast (0 ms)
+1: [ RUN      ] AllreduceMock.MockGather
+1: [3]@@@Hit Mock Error:Allgather , rabit is configured to keep process running
+1: [       OK ] AllreduceMock.MockGather (0 ms)
+1: [----------] 3 tests from AllreduceMock (0 ms total)
+1: 
+1: [----------] 7 tests from AllreduceRobust
+1: [ RUN      ] AllreduceRobust.SyncErrorTimeout
+1: [EXPERIMENTAL] timeout thread expires in 1 second(s)
+1: [       OK ] AllreduceRobust.SyncErrorTimeout (1501 ms)
+1: [ RUN      ] AllreduceRobust.SyncErrorReset
+1: [EXPERIMENTAL] timeout thread expires in 1 second(s)
+1: [0] timeout thread 140104139972608 starts
+1: [0] timeout task thread 140104139972608 exits
+1: [       OK ] AllreduceRobust.SyncErrorReset (101 ms)
+1: [ RUN      ] AllreduceRobust.SyncSuccessErrorTimeout
+1: [EXPERIMENTAL] timeout thread expires in 1 second(s)
+1: [0] timeout thread 140104139972608 starts
+1: [       OK ] AllreduceRobust.SyncSuccessErrorTimeout (1601 ms)
+1: [ RUN      ] AllreduceRobust.SyncSuccessErrorSuccess
+1: [EXPERIMENTAL] timeout thread expires in 1 second(s)
+1: [0] timeout thread 140104139972608 starts
+1: [0] timeout task thread 140104139972608 exits
+1: [       OK ] AllreduceRobust.SyncSuccessErrorSuccess (1121 ms)
+1: [ RUN      ] AllreduceRobust.SyncErrorNoResetTimeout
+1: [EXPERIMENTAL] timeout thread expires in 1 second(s)
+1: [0] timeout thread 140104139972608 starts
+1: [       OK ] AllreduceRobust.SyncErrorNoResetTimeout (1101 ms)
+1: [ RUN      ] AllreduceRobust.NoTimeoutShutDown
+1: [       OK ] AllreduceRobust.NoTimeoutShutDown (10 ms)
+1: [ RUN      ] AllreduceRobust.ShutDownBeforeTimeout
+1: [EXPERIMENTAL] timeout thread expires in 1 second(s)
+1: [0] timeout thread 140104139972608 starts
+1: [0] timeout task thread 140104139972608 exits
+1: [       OK ] AllreduceRobust.ShutDownBeforeTimeout (101 ms)
+1: [----------] 7 tests from AllreduceRobust (5538 ms total)
+1: 
+1: [----------] 1 test from MemoryFixSizeBuffer
+1: [ RUN      ] MemoryFixSizeBuffer.Seek
+1: [       OK ] MemoryFixSizeBuffer.Seek (0 ms)
+1: [----------] 1 test from MemoryFixSizeBuffer (0 ms total)
+1: 
+1: [----------] 1 test from Utils
+1: [ RUN      ] Utils.Assert
+1: AssertError:foo, rabit is configured to keep process running
+1: [       OK ] Utils.Assert (0 ms)
+1: [----------] 1 test from Utils (0 ms total)
+1: 
+1: [----------] 2 tests from RandomDataGenerator
+1: [ RUN      ] RandomDataGenerator.DMatrix
+1: [       OK ] RandomDataGenerator.DMatrix (1 ms)
+1: [ RUN      ] RandomDataGenerator.GenerateArrayInterfaceBatch
+1: [       OK ] RandomDataGenerator.GenerateArrayInterfaceBatch (26 ms)
+1: [----------] 2 tests from RandomDataGenerator (27 ms total)
+1: 
+1: [----------] 10 tests from Learner
+1: [ RUN      ] Learner.Basic
+1: [       OK ] Learner.Basic (0 ms)
+1: [ RUN      ] Learner.ParameterValidation
+1: [       OK ] Learner.ParameterValidation (0 ms)
+1: [ RUN      ] Learner.CheckGroup
+1: [16:08:53] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 0 extra nodes, 0 pruned nodes, max_depth=0
+1: [       OK ] Learner.CheckGroup (20 ms)
+1: [ RUN      ] Learner.SLOW_CheckMultiBatch
+1: [16:08:53] INFO: /home/otivedani/xgboost/tests/cpp/data/../../../src/data/sparse_page_writer.h:116: SparsePageWriter Finished writing to /tmp/tmpdir.XAWwEu/big.libsvm.cache.row.page
+1: [16:08:53] INFO: /home/otivedani/xgboost/tests/cpp/data/../../../src/data/sparse_page_source.h:367: SparsePageSource Finished writing to /tmp/tmpdir.XAWwEu/big.libsvm.cache
+1: [16:08:53] WARNING: /home/otivedani/xgboost/src/gbm/gbtree.cc:142: Tree method is automatically set to 'approx' since external-memory data matrix is used.
+1: [16:08:53] INFO: /home/otivedani/xgboost/src/data/./sparse_page_source.h:493: SortedCSCPageSource: Finished writing to /tmp/tmpdir.XAWwEu/big.libsvm.cache
+1: [16:08:53] INFO: /home/otivedani/xgboost/tests/cpp/data/../../../src/data/sparse_page_writer.h:116: SparsePageWriter Finished writing to /tmp/tmpdir.XAWwEu/big.libsvm.cache.sorted.col.page
+1: [16:08:53] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 2 extra nodes, 0 pruned nodes, max_depth=1
+1: [       OK ] Learner.SLOW_CheckMultiBatch (49 ms)
+1: [ RUN      ] Learner.Configuration
+1: [       OK ] Learner.Configuration (0 ms)
+1: [ RUN      ] Learner.JsonModelIO
+1: [16:08:53] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 0 extra nodes, 0 pruned nodes, max_depth=0
+1: [16:08:53] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 0 extra nodes, 0 pruned nodes, max_depth=0
+1: [16:08:53] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 0 extra nodes, 0 pruned nodes, max_depth=0
+1: [16:08:53] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 0 extra nodes, 0 pruned nodes, max_depth=0
+1: [       OK ] Learner.JsonModelIO (41 ms)
+1: [ RUN      ] Learner.MultiThreadedPredict
+1: [       OK ] Learner.MultiThreadedPredict (225 ms)
+1: [ RUN      ] Learner.BinaryModelIO
+1: [16:08:53] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 0 extra nodes, 0 pruned nodes, max_depth=0
+1: [16:08:53] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 0 extra nodes, 0 pruned nodes, max_depth=0
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 0 extra nodes, 0 pruned nodes, max_depth=0
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 0 extra nodes, 0 pruned nodes, max_depth=0
+1: [       OK ] Learner.BinaryModelIO (39 ms)
+1: [ RUN      ] Learner.GPUConfiguration
+1: unknown file: Failure
+1: C++ exception with description "[16:08:54] /home/otivedani/xgboost/tests/cpp/tree/../../../src/tree/updater_gpu_hist.cu:786: Exception in gpu_hist: NCCL failure :unhandled system error /home/otivedani/xgboost/src/common/device_helpers.cu(71)
+1: 
+1: Stack trace:
+1:   [bt] (0) /home/otivedani/xgboost/build/testxgboost(+0x1327e9) [0x561e2ab557e9]
+1:   [bt] (1) /home/otivedani/xgboost/build/testxgboost(+0x4465f2) [0x561e2ae695f2]
+1:   [bt] (2) /home/otivedani/xgboost/build/testxgboost(+0x4f7d29) [0x561e2af1ad29]
+1:   [bt] (3) /home/otivedani/xgboost/build/testxgboost(+0x4f8c01) [0x561e2af1bc01]
+1:   [bt] (4) /home/otivedani/xgboost/build/testxgboost(+0x522602) [0x561e2af45602]
+1:   [bt] (5) /home/otivedani/xgboost/build/testxgboost(+0x28e799) [0x561e2acb1799]
+1:   [bt] (6) /home/otivedani/xgboost/build/testxgboost(+0x8e8a11) [0x561e2b30ba11]
+1:   [bt] (7) /home/otivedani/xgboost/build/testxgboost(+0x8de586) [0x561e2b301586]
+1:   [bt] (8) /home/otivedani/xgboost/build/testxgboost(+0x8de6e5) [0x561e2b3016e5]
+1: 
+1: " thrown in the test body.
+1: [  FAILED  ] Learner.GPUConfiguration (24 ms)
+1: [ RUN      ] Learner.Seed
+1: [       OK ] Learner.Seed (0 ms)
+1: [----------] 10 tests from Learner (399 ms total)
+1: 
+1: [----------] 1 test from Logging
+1: [ RUN      ] Logging.Basic
+1: [       OK ] Logging.Basic (1 ms)
+1: [----------] 1 test from Logging (1 ms total)
+1: 
+1: [----------] 7 tests from SerializationTest
+1: [ RUN      ] SerializationTest.Exact
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 0 extra nodes, 0 pruned nodes, max_depth=0
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 0 extra nodes, 0 pruned nodes, max_depth=0
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 0 extra nodes, 0 pruned nodes, max_depth=0
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 4 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 0 extra nodes, 0 pruned nodes, max_depth=0
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 0 extra nodes, 0 pruned nodes, max_depth=0
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 0 extra nodes, 0 pruned nodes, max_depth=0
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 4 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 0 extra nodes, 0 pruned nodes, max_depth=0
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 4 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 0 extra nodes, 0 pruned nodes, max_depth=0
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 0 extra nodes, 0 pruned nodes, max_depth=0
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 0 extra nodes, 0 pruned nodes, max_depth=0
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 0 extra nodes, 0 pruned nodes, max_depth=0
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 0 extra nodes, 0 pruned nodes, max_depth=0
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 0 extra nodes, 0 pruned nodes, max_depth=0
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 0 extra nodes, 0 pruned nodes, max_depth=0
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 0 extra nodes, 0 pruned nodes, max_depth=0
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 0 extra nodes, 0 pruned nodes, max_depth=0
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 0 extra nodes, 0 pruned nodes, max_depth=0
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 0 extra nodes, 0 pruned nodes, max_depth=0
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 0 extra nodes, 0 pruned nodes, max_depth=0
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 4 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 4 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 4 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 4 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 0 extra nodes, 0 pruned nodes, max_depth=0
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 0 extra nodes, 0 pruned nodes, max_depth=0
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 0 extra nodes, 0 pruned nodes, max_depth=0
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 0 extra nodes, 0 pruned nodes, max_depth=0
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 0 extra nodes, 0 pruned nodes, max_depth=0
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 0 extra nodes, 0 pruned nodes, max_depth=0
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 0 extra nodes, 0 pruned nodes, max_depth=0
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 0 extra nodes, 0 pruned nodes, max_depth=0
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 0 extra nodes, 0 pruned nodes, max_depth=0
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 0 extra nodes, 0 pruned nodes, max_depth=0
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 0 extra nodes, 0 pruned nodes, max_depth=0
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 0 extra nodes, 0 pruned nodes, max_depth=0
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 4 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 4 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 4 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 4 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 0 extra nodes, 0 pruned nodes, max_depth=0
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 0 extra nodes, 0 pruned nodes, max_depth=0
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 0 extra nodes, 0 pruned nodes, max_depth=0
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 0 extra nodes, 0 pruned nodes, max_depth=0
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 4 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 4 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 4 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 4 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 0 extra nodes, 0 pruned nodes, max_depth=0
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:685: drop 0 trees, weight = 1
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 0 extra nodes, 0 pruned nodes, max_depth=0
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:685: drop 0 trees, weight = 1
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 0 extra nodes, 0 pruned nodes, max_depth=0
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:685: drop 0 trees, weight = 1
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 4 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:685: drop 0 trees, weight = 1
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 0 extra nodes, 0 pruned nodes, max_depth=0
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:685: drop 0 trees, weight = 1
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 0 extra nodes, 0 pruned nodes, max_depth=0
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:685: drop 0 trees, weight = 1
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 0 extra nodes, 0 pruned nodes, max_depth=0
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:685: drop 0 trees, weight = 1
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 4 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:685: drop 0 trees, weight = 1
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 0 extra nodes, 0 pruned nodes, max_depth=0
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:685: drop 0 trees, weight = 1
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 4 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:685: drop 0 trees, weight = 1
+1: [       OK ] SerializationTest.Exact (76 ms)
+1: [ RUN      ] SerializationTest.Approx
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:685: drop 0 trees, weight = 1
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:685: drop 0 trees, weight = 1
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:685: drop 0 trees, weight = 1
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:685: drop 0 trees, weight = 1
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:685: drop 0 trees, weight = 1
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:685: drop 0 trees, weight = 1
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:685: drop 0 trees, weight = 1
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:685: drop 0 trees, weight = 1
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:685: drop 0 trees, weight = 1
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:685: drop 0 trees, weight = 1
+1: [       OK ] SerializationTest.Approx (67 ms)
+1: [ RUN      ] SerializationTest.Hist
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:177: Tree method is selected to be 'hist', which uses a single updater grow_quantile_histmaker.
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:177: Tree method is selected to be 'hist', which uses a single updater grow_quantile_histmaker.
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:177: Tree method is selected to be 'hist', which uses a single updater grow_quantile_histmaker.
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:177: Tree method is selected to be 'hist', which uses a single updater grow_quantile_histmaker.
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:177: Tree method is selected to be 'hist', which uses a single updater grow_quantile_histmaker.
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:177: Tree method is selected to be 'hist', which uses a single updater grow_quantile_histmaker.
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:177: Tree method is selected to be 'hist', which uses a single updater grow_quantile_histmaker.
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:177: Tree method is selected to be 'hist', which uses a single updater grow_quantile_histmaker.
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:177: Tree method is selected to be 'hist', which uses a single updater grow_quantile_histmaker.
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:177: Tree method is selected to be 'hist', which uses a single updater grow_quantile_histmaker.
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:177: Tree method is selected to be 'hist', which uses a single updater grow_quantile_histmaker.
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:177: Tree method is selected to be 'hist', which uses a single updater grow_quantile_histmaker.
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:177: Tree method is selected to be 'hist', which uses a single updater grow_quantile_histmaker.
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:177: Tree method is selected to be 'hist', which uses a single updater grow_quantile_histmaker.
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:177: Tree method is selected to be 'hist', which uses a single updater grow_quantile_histmaker.
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:177: Tree method is selected to be 'hist', which uses a single updater grow_quantile_histmaker.
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:177: Tree method is selected to be 'hist', which uses a single updater grow_quantile_histmaker.
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:177: Tree method is selected to be 'hist', which uses a single updater grow_quantile_histmaker.
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:177: Tree method is selected to be 'hist', which uses a single updater grow_quantile_histmaker.
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:177: Tree method is selected to be 'hist', which uses a single updater grow_quantile_histmaker.
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:177: Tree method is selected to be 'hist', which uses a single updater grow_quantile_histmaker.
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:177: Tree method is selected to be 'hist', which uses a single updater grow_quantile_histmaker.
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:177: Tree method is selected to be 'hist', which uses a single updater grow_quantile_histmaker.
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:177: Tree method is selected to be 'hist', which uses a single updater grow_quantile_histmaker.
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:177: Tree method is selected to be 'hist', which uses a single updater grow_quantile_histmaker.
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:177: Tree method is selected to be 'hist', which uses a single updater grow_quantile_histmaker.
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:177: Tree method is selected to be 'hist', which uses a single updater grow_quantile_histmaker.
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:177: Tree method is selected to be 'hist', which uses a single updater grow_quantile_histmaker.
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:177: Tree method is selected to be 'hist', which uses a single updater grow_quantile_histmaker.
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:177: Tree method is selected to be 'hist', which uses a single updater grow_quantile_histmaker.
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:177: Tree method is selected to be 'hist', which uses a single updater grow_quantile_histmaker.
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:177: Tree method is selected to be 'hist', which uses a single updater grow_quantile_histmaker.
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:177: Tree method is selected to be 'hist', which uses a single updater grow_quantile_histmaker.
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:177: Tree method is selected to be 'hist', which uses a single updater grow_quantile_histmaker.
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:685: drop 0 trees, weight = 1
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:177: Tree method is selected to be 'hist', which uses a single updater grow_quantile_histmaker.
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:685: drop 0 trees, weight = 1
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:177: Tree method is selected to be 'hist', which uses a single updater grow_quantile_histmaker.
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:177: Tree method is selected to be 'hist', which uses a single updater grow_quantile_histmaker.
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:177: Tree method is selected to be 'hist', which uses a single updater grow_quantile_histmaker.
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:685: drop 0 trees, weight = 1
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:177: Tree method is selected to be 'hist', which uses a single updater grow_quantile_histmaker.
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:685: drop 0 trees, weight = 1
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:177: Tree method is selected to be 'hist', which uses a single updater grow_quantile_histmaker.
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:177: Tree method is selected to be 'hist', which uses a single updater grow_quantile_histmaker.
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:685: drop 0 trees, weight = 1
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:177: Tree method is selected to be 'hist', which uses a single updater grow_quantile_histmaker.
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:685: drop 0 trees, weight = 1
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:177: Tree method is selected to be 'hist', which uses a single updater grow_quantile_histmaker.
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:685: drop 0 trees, weight = 1
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:177: Tree method is selected to be 'hist', which uses a single updater grow_quantile_histmaker.
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:685: drop 0 trees, weight = 1
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:177: Tree method is selected to be 'hist', which uses a single updater grow_quantile_histmaker.
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:177: Tree method is selected to be 'hist', which uses a single updater grow_quantile_histmaker.
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:177: Tree method is selected to be 'hist', which uses a single updater grow_quantile_histmaker.
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:685: drop 0 trees, weight = 1
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:177: Tree method is selected to be 'hist', which uses a single updater grow_quantile_histmaker.
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/tree/updater_prune.cc:101: tree pruning end, 6 extra nodes, 0 pruned nodes, max_depth=2
+1: [16:08:54] INFO: /home/otivedani/xgboost/src/gbm/gbtree.cc:685: drop 0 trees, weight = 1
+1: [       OK ] SerializationTest.Hist (76 ms)
+1: [ RUN      ] SerializationTest.CPUCoordDescent
+1: [       OK ] SerializationTest.CPUCoordDescent (9 ms)
+1: [ RUN      ] SerializationTest.GpuHist
+1: unknown file: Failure
+1: C++ exception with description "[16:08:54] /home/otivedani/xgboost/tests/cpp/tree/../../../src/tree/updater_gpu_hist.cu:786: Exception in gpu_hist: NCCL failure :unhandled system error /home/otivedani/xgboost/src/common/device_helpers.cu(71)
+1: 
+1: Stack trace:
+1:   [bt] (0) /home/otivedani/xgboost/build/testxgboost(+0x1327e9) [0x561e2ab557e9]
+1:   [bt] (1) /home/otivedani/xgboost/build/testxgboost(+0x4465f2) [0x561e2ae695f2]
+1:   [bt] (2) /home/otivedani/xgboost/build/testxgboost(+0x4f7d29) [0x561e2af1ad29]
+1:   [bt] (3) /home/otivedani/xgboost/build/testxgboost(+0x4f8c01) [0x561e2af1bc01]
+1:   [bt] (4) /home/otivedani/xgboost/build/testxgboost(+0x522602) [0x561e2af45602]
+1:   [bt] (5) /home/otivedani/xgboost/build/testxgboost(+0x298667) [0x561e2acbb667]
+1:   [bt] (6) /home/otivedani/xgboost/build/testxgboost(+0x29b37f) [0x561e2acbe37f]
+1:   [bt] (7) /home/otivedani/xgboost/build/testxgboost(+0x8e8a11) [0x561e2b30ba11]
+1:   [bt] (8) /home/otivedani/xgboost/build/testxgboost(+0x8de586) [0x561e2b301586]
+1: 
+1: " thrown in the test body.
+1: [  FAILED  ] SerializationTest.GpuHist (6 ms)
+1: [ RUN      ] SerializationTest.ConfigurationCount
+1: unknown file: Failure
+1: C++ exception with description "[16:08:54] /home/otivedani/xgboost/tests/cpp/tree/../../../src/tree/updater_gpu_hist.cu:786: Exception in gpu_hist: NCCL failure :unhandled system error /home/otivedani/xgboost/src/common/device_helpers.cu(71)
+1: 
+1: Stack trace:
+1:   [bt] (0) /home/otivedani/xgboost/build/testxgboost(+0x1327e9) [0x561e2ab557e9]
+1:   [bt] (1) /home/otivedani/xgboost/build/testxgboost(+0x4465f2) [0x561e2ae695f2]
+1:   [bt] (2) /home/otivedani/xgboost/build/testxgboost(+0x4f7d29) [0x561e2af1ad29]
+1:   [bt] (3) /home/otivedani/xgboost/build/testxgboost(+0x4f8c01) [0x561e2af1bc01]
+1:   [bt] (4) /home/otivedani/xgboost/build/testxgboost(+0x522602) [0x561e2af45602]
+1:   [bt] (5) /home/otivedani/xgboost/build/testxgboost(+0x297236) [0x561e2acba236]
+1:   [bt] (6) /home/otivedani/xgboost/build/testxgboost(+0x8e8a11) [0x561e2b30ba11]
+1:   [bt] (7) /home/otivedani/xgboost/build/testxgboost(+0x8de586) [0x561e2b301586]
+1:   [bt] (8) /home/otivedani/xgboost/build/testxgboost(+0x8de6e5) [0x561e2b3016e5]
+1: 
+1: " thrown in the test body.
+1: [  FAILED  ] SerializationTest.ConfigurationCount (7 ms)
+1: [ RUN      ] SerializationTest.GPUCoordDescent
+1: [       OK ] SerializationTest.GPUCoordDescent (178 ms)
+1: [----------] 7 tests from SerializationTest (420 ms total)
+1: 
+1: [----------] 6 tests from LogitSerializationTest
+1: [ RUN      ] LogitSerializationTest.Exact
+1: [       OK ] LogitSerializationTest.Exact (48 ms)
+1: [ RUN      ] LogitSerializationTest.Approx
+1: [       OK ] LogitSerializationTest.Approx (48 ms)
+1: [ RUN      ] LogitSerializationTest.Hist
+1: [       OK ] LogitSerializationTest.Hist (40 ms)
+1: [ RUN      ] LogitSerializationTest.CPUCoordDescent
+1: [       OK ] LogitSerializationTest.CPUCoordDescent (12 ms)
+1: [ RUN      ] LogitSerializationTest.GpuHist
+1: unknown file: Failure
+1: C++ exception with description "[16:08:54] /home/otivedani/xgboost/tests/cpp/tree/../../../src/tree/updater_gpu_hist.cu:786: Exception in gpu_hist: NCCL failure :unhandled system error /home/otivedani/xgboost/src/common/device_helpers.cu(71)
+1: 
+1: Stack trace:
+1:   [bt] (0) /home/otivedani/xgboost/build/testxgboost(+0x1327e9) [0x561e2ab557e9]
+1:   [bt] (1) /home/otivedani/xgboost/build/testxgboost(+0x4465f2) [0x561e2ae695f2]
+1:   [bt] (2) /home/otivedani/xgboost/build/testxgboost(+0x4f7d29) [0x561e2af1ad29]
+1:   [bt] (3) /home/otivedani/xgboost/build/testxgboost(+0x4f8c01) [0x561e2af1bc01]
+1:   [bt] (4) /home/otivedani/xgboost/build/testxgboost(+0x522602) [0x561e2af45602]
+1:   [bt] (5) /home/otivedani/xgboost/build/testxgboost(+0x298667) [0x561e2acbb667]
+1:   [bt] (6) /home/otivedani/xgboost/build/testxgboost(+0x29c6a3) [0x561e2acbf6a3]
+1:   [bt] (7) /home/otivedani/xgboost/build/testxgboost(+0x8e8a11) [0x561e2b30ba11]
+1:   [bt] (8) /home/otivedani/xgboost/build/testxgboost(+0x8de586) [0x561e2b301586]
+1: 
+1: " thrown in the test body.
+1: [  FAILED  ] LogitSerializationTest.GpuHist (6 ms)
+1: [ RUN      ] LogitSerializationTest.GPUCoordDescent
+1: [       OK ] LogitSerializationTest.GPUCoordDescent (183 ms)
+1: [----------] 6 tests from LogitSerializationTest (337 ms total)
+1: 
+1: [----------] 6 tests from MultiClassesSerializationTest
+1: [ RUN      ] MultiClassesSerializationTest.Exact
+1: [       OK ] MultiClassesSerializationTest.Exact (134 ms)
+1: [ RUN      ] MultiClassesSerializationTest.Approx
+1: [       OK ] MultiClassesSerializationTest.Approx (66 ms)
+1: [ RUN      ] MultiClassesSerializationTest.Hist
+1: [       OK ] MultiClassesSerializationTest.Hist (133 ms)
+1: [ RUN      ] MultiClassesSerializationTest.CPUCoordDescent
+1: [       OK ] MultiClassesSerializationTest.CPUCoordDescent (11 ms)
+1: [ RUN      ] MultiClassesSerializationTest.GpuHist
+1: unknown file: Failure
+1: C++ exception with description "[16:08:55] /home/otivedani/xgboost/tests/cpp/tree/../../../src/tree/updater_gpu_hist.cu:786: Exception in gpu_hist: NCCL failure :unhandled system error /home/otivedani/xgboost/src/common/device_helpers.cu(71)
+1: 
+1: Stack trace:
+1:   [bt] (0) /home/otivedani/xgboost/build/testxgboost(+0x1327e9) [0x561e2ab557e9]
+1:   [bt] (1) /home/otivedani/xgboost/build/testxgboost(+0x4465f2) [0x561e2ae695f2]
+1:   [bt] (2) /home/otivedani/xgboost/build/testxgboost(+0x4f7d29) [0x561e2af1ad29]
+1:   [bt] (3) /home/otivedani/xgboost/build/testxgboost(+0x4f8f70) [0x561e2af1bf70]
+1:   [bt] (4) /home/otivedani/xgboost/build/testxgboost(+0x522602) [0x561e2af45602]
+1:   [bt] (5) /home/otivedani/xgboost/build/testxgboost(+0x298667) [0x561e2acbb667]
+1:   [bt] (6) /home/otivedani/xgboost/build/testxgboost(+0x29edad) [0x561e2acc1dad]
+1:   [bt] (7) /home/otivedani/xgboost/build/testxgboost(+0x8e8a11) [0x561e2b30ba11]
+1:   [bt] (8) /home/otivedani/xgboost/build/testxgboost(+0x8de586) [0x561e2b301586]
+1: 
+1: " thrown in the test body.
+1: [  FAILED  ] MultiClassesSerializationTest.GpuHist (8 ms)
+1: [ RUN      ] MultiClassesSerializationTest.GPUCoordDescent
+1: [       OK ] MultiClassesSerializationTest.GPUCoordDescent (494 ms)
+1: [----------] 6 tests from MultiClassesSerializationTest (847 ms total)
+1: 
+1: [----------] 2 tests from CPUFeatureInteractionConstraint
+1: [ RUN      ] CPUFeatureInteractionConstraint.Empty
+1: [       OK ] CPUFeatureInteractionConstraint.Empty (0 ms)
+1: [ RUN      ] CPUFeatureInteractionConstraint.Basic
+1: [       OK ] CPUFeatureInteractionConstraint.Basic (0 ms)
+1: [----------] 2 tests from CPUFeatureInteractionConstraint (0 ms total)
+1: 
+1: [----------] 1 test from GrowHistMaker
+1: [ RUN      ] GrowHistMaker.InteractionConstraint
+1: [       OK ] GrowHistMaker.InteractionConstraint (0 ms)
+1: [----------] 1 test from GrowHistMaker (0 ms total)
+1: 
+1: [----------] 3 tests from Param
+1: [ RUN      ] Param.VectorIOStream
+1: [       OK ] Param.VectorIOStream (0 ms)
+1: [ RUN      ] Param.VectorStreamRead
+1: [       OK ] Param.VectorStreamRead (0 ms)
+1: [ RUN      ] Param.SplitEntry
+1: [       OK ] Param.SplitEntry (0 ms)
+1: [----------] 3 tests from Param (0 ms total)
+1: 
+1: [----------] 2 tests from Updater
+1: [ RUN      ] Updater.Prune
+1: [       OK ] Updater.Prune (1 ms)
+1: [ RUN      ] Updater.Refresh
+1: [       OK ] Updater.Refresh (0 ms)
+1: [----------] 2 tests from Updater (1 ms total)
+1: 
+1: [----------] 9 tests from QuantileHist
+1: [ RUN      ] QuantileHist.InitData
+1: [       OK ] QuantileHist.InitData (0 ms)
+1: [ RUN      ] QuantileHist.InitDataSampling
+1: [       OK ] QuantileHist.InitDataSampling (5 ms)
+1: [ RUN      ] QuantileHist.AddHistRows
+1: [       OK ] QuantileHist.AddHistRows (0 ms)
+1: [ RUN      ] QuantileHist.SyncHistograms
+1: [       OK ] QuantileHist.SyncHistograms (0 ms)
+1: [ RUN      ] QuantileHist.DistributedAddHistRows
+1: [       OK ] QuantileHist.DistributedAddHistRows (1 ms)
+1: [ RUN      ] QuantileHist.DistributedSyncHistograms
+1: [       OK ] QuantileHist.DistributedSyncHistograms (0 ms)
+1: [ RUN      ] QuantileHist.BuildHist
+1: [       OK ] QuantileHist.BuildHist (0 ms)
+1: [ RUN      ] QuantileHist.EvalSplits
+1: [       OK ] QuantileHist.EvalSplits (1 ms)
+1: [ RUN      ] QuantileHist.ApplySplit
+1: [       OK ] QuantileHist.ApplySplit (1 ms)
+1: [----------] 9 tests from QuantileHist (8 ms total)
+1: 
+1: [----------] 8 tests from Tree
+1: [ RUN      ] Tree.Load
+1: [       OK ] Tree.Load (0 ms)
+1: [ RUN      ] Tree.AllocateNode
+1: [       OK ] Tree.AllocateNode (0 ms)
+1: [ RUN      ] Tree.ExpandCategoricalFeature
+1: [       OK ] Tree.ExpandCategoricalFeature (0 ms)
+1: [ RUN      ] Tree.CategoricalIO
+1: [       OK ] Tree.CategoricalIO (0 ms)
+1: [ RUN      ] Tree.DumpJson
+1: [       OK ] Tree.DumpJson (0 ms)
+1: [ RUN      ] Tree.DumpText
+1: [       OK ] Tree.DumpText (0 ms)
+1: [ RUN      ] Tree.DumpDot
+1: [       OK ] Tree.DumpDot (0 ms)
+1: [ RUN      ] Tree.JsonIO
+1: [       OK ] Tree.JsonIO (0 ms)
+1: [----------] 8 tests from Tree (1 ms total)
+1: 
+1: [----------] 4 tests from UpdaterTreeStatTest
+1: [ RUN      ] UpdaterTreeStatTest.GpuHist
+1: unknown file: Failure
+1: C++ exception with description "[16:08:55] /home/otivedani/xgboost/tests/cpp/tree/../../../src/tree/updater_gpu_hist.cu:786: Exception in gpu_hist: NCCL failure :unhandled system error /home/otivedani/xgboost/src/common/device_helpers.cu(71)
+1: 
+1: Stack trace:
+1:   [bt] (0) /home/otivedani/xgboost/build/testxgboost(+0x1327e9) [0x561e2ab557e9]
+1:   [bt] (1) /home/otivedani/xgboost/build/testxgboost(+0x4465f2) [0x561e2ae695f2]
+1:   [bt] (2) /home/otivedani/xgboost/build/testxgboost(+0x2d7889) [0x561e2acfa889]
+1:   [bt] (3) /home/otivedani/xgboost/build/testxgboost(+0x2d4d15) [0x561e2acf7d15]
+1:   [bt] (4) /home/otivedani/xgboost/build/testxgboost(+0x8e8a11) [0x561e2b30ba11]
+1:   [bt] (5) /home/otivedani/xgboost/build/testxgboost(+0x8de586) [0x561e2b301586]
+1:   [bt] (6) /home/otivedani/xgboost/build/testxgboost(+0x8de6e5) [0x561e2b3016e5]
+1:   [bt] (7) /home/otivedani/xgboost/build/testxgboost(+0x8de80d) [0x561e2b30180d]
+1:   [bt] (8) /home/otivedani/xgboost/build/testxgboost(+0x8dedc3) [0x561e2b301dc3]
+1: 
+1: " thrown in the test body.
+1: [  FAILED  ] UpdaterTreeStatTest.GpuHist (1 ms)
+1: [ RUN      ] UpdaterTreeStatTest.Hist
+1: [       OK ] UpdaterTreeStatTest.Hist (1 ms)
+1: [ RUN      ] UpdaterTreeStatTest.Exact
+1: [       OK ] UpdaterTreeStatTest.Exact (0 ms)
+1: [ RUN      ] UpdaterTreeStatTest.Approx
+1: [       OK ] UpdaterTreeStatTest.Approx (0 ms)
+1: [----------] 4 tests from UpdaterTreeStatTest (2 ms total)
+1: 
+1: [----------] 1 test from SumReduce
+1: [ RUN      ] SumReduce.Test
+1: [       OK ] SumReduce.Test (1 ms)
+1: [----------] 1 test from SumReduce (1 ms total)
+1: 
+1: [----------] 1 test from AtomicAdd
+1: [ RUN      ] AtomicAdd.SizeT
+1: [       OK ] AtomicAdd.SizeT (1 ms)
+1: [----------] 1 test from AtomicAdd (2 ms total)
+1: 
+1: [----------] 1 test from SegmentID
+1: [ RUN      ] SegmentID.Basic
+1: [       OK ] SegmentID.Basic (0 ms)
+1: [----------] 1 test from SegmentID (0 ms total)
+1: 
+1: [----------] 2 tests from SegmentedUnique
+1: [ RUN      ] SegmentedUnique.Basic
+1: [       OK ] SegmentedUnique.Basic (10 ms)
+1: [ RUN      ] SegmentedUnique.Regression
+1: [       OK ] SegmentedUnique.Regression (11 ms)
+1: [----------] 2 tests from SegmentedUnique (21 ms total)
+1: 
+1: [----------] 1 test from DeviceHelpers
+1: [ RUN      ] DeviceHelpers.Reduce
+1: [       OK ] DeviceHelpers.Reduce (22 ms)
+1: [----------] 1 test from DeviceHelpers (22 ms total)
+1: 
+1: [----------] 1 test from Allocator
+1: [ RUN      ] Allocator.OOM
+1: [       OK ] Allocator.OOM (6 ms)
+1: [----------] 1 test from Allocator (6 ms total)
+1: 
+1: [----------] 1 test from HistUitl
+1: [ RUN      ] HistUitl.DeviceSketchWeights
+1: [       OK ] HistUitl.DeviceSketchWeights (490 ms)
+1: [----------] 1 test from HistUitl (490 ms total)
+1: 
+1: [----------] 6 tests from HostDeviceVector
+1: [ RUN      ] HostDeviceVector.Basic
+1: [       OK ] HostDeviceVector.Basic (8 ms)
+1: [ RUN      ] HostDeviceVector.Copy
+1: [       OK ] HostDeviceVector.Copy (8 ms)
+1: [ RUN      ] HostDeviceVector.SetDevice
+1: [       OK ] HostDeviceVector.SetDevice (1 ms)
+1: [ RUN      ] HostDeviceVector.Span
+1: [       OK ] HostDeviceVector.Span (2 ms)
+1: [ RUN      ] HostDeviceVector.Empty
+1: [       OK ] HostDeviceVector.Empty (0 ms)
+1: [ RUN      ] HostDeviceVector.MGPU_Basic
+1: [       OK ] HostDeviceVector.MGPU_Basic (0 ms)
+1: [----------] 6 tests from HostDeviceVector (19 ms total)
+1: 
+1: [----------] 11 tests from GPUQuantile
+1: [ RUN      ] GPUQuantile.Basic
+1: [       OK ] GPUQuantile.Basic (3 ms)
+1: [ RUN      ] GPUQuantile.Unique
+1: [       OK ] GPUQuantile.Unique (4055 ms)
+1: [ RUN      ] GPUQuantile.Prune
+1: [       OK ] GPUQuantile.Prune (1816 ms)
+1: [ RUN      ] GPUQuantile.MergeEmpty
+1: [       OK ] GPUQuantile.MergeEmpty (30 ms)
+1: [ RUN      ] GPUQuantile.MergeBasic
+1: [       OK ] GPUQuantile.MergeBasic (4142 ms)
+1: [ RUN      ] GPUQuantile.MergeDuplicated
+1: [       OK ] GPUQuantile.MergeDuplicated (254 ms)
+1: [ RUN      ] GPUQuantile.MultiMerge
+1: [       OK ] GPUQuantile.MultiMerge (2637 ms)
+1: [ RUN      ] GPUQuantile.AllReduceBasic
+1: [       OK ] GPUQuantile.AllReduceBasic (0 ms)
+1: [ RUN      ] GPUQuantile.SameOnAllWorkers
+1: [       OK ] GPUQuantile.SameOnAllWorkers (0 ms)
+1: [ RUN      ] GPUQuantile.Push
+1: [       OK ] GPUQuantile.Push (7 ms)
+1: [ RUN      ] GPUQuantile.MultiColPush
+1: [       OK ] GPUQuantile.MultiColPush (7 ms)
+1: [----------] 11 tests from GPUQuantile (12951 ms total)
+1: 
+1: [----------] 14 tests from GPUSpan
+1: [ RUN      ] GPUSpan.FromOther
+1: [       OK ] GPUSpan.FromOther (1 ms)
+1: [ RUN      ] GPUSpan.Assignment
+1: [       OK ] GPUSpan.Assignment (1 ms)
+1: [ RUN      ] GPUSpan.TestStatus
+1: [       OK ] GPUSpan.TestStatus (1 ms)
+1: [ RUN      ] GPUSpan.WithTrust
+1: [       OK ] GPUSpan.WithTrust (2 ms)
+1: [ RUN      ] GPUSpan.BeginEnd
+1: [       OK ] GPUSpan.BeginEnd (0 ms)
+1: [ RUN      ] GPUSpan.RBeginREnd
+1: [       OK ] GPUSpan.RBeginREnd (1 ms)
+1: [ RUN      ] GPUSpan.Modify
+1: [       OK ] GPUSpan.Modify (6 ms)
+1: [ RUN      ] GPUSpan.Observers
+1: [       OK ] GPUSpan.Observers (3 ms)
+1: [ RUN      ] GPUSpan.Compare
+1: [       OK ] GPUSpan.Compare (1 ms)
+1: [ RUN      ] GPUSpan.FirstLast
+1/6 Test #1: TestXGBoostLib ...................Child aborted***Exception:  62.82 sec
+test 2
+    Start 2: TestXGBoostCLI
+
+2: Test command: /home/otivedani/xgboost/xgboost "/home/otivedani/xgboost/build/tests/cli/machine.conf"
+2: Test timeout computed to be: 10000000
+2: [16:09:09] 6513x127 matrix with 143286 entries loaded from /home/otivedani/xgboost/demo/data/agaricus.txt.train?format=libsvm
+2: [16:09:09] 1611x127 matrix with 35442 entries loaded from /home/otivedani/xgboost/demo/data/agaricus.txt.test?format=libsvm
+2: [16:09:09] [0]	test-rmse:0.122489
+2: [16:09:09] [1]	test-rmse:0.087104
+2/6 Test #2: TestXGBoostCLI ...................   Passed    0.55 sec
+test 3
+    Start 3: AllTestsInDMLCUnitTests
+
+3: Test command: /home/otivedani/xgboost/build/dmlc-core/test/unittest/dmlc_unit_tests
+3: Test timeout computed to be: 10000000
+3: [==========] Running 63 tests from 17 test suites.
+3: [----------] Global test environment set-up.
+3: [----------] 3 tests from Any
+3: [ RUN      ] Any.basics
+3: [       OK ] Any.basics (0 ms)
+3: [ RUN      ] Any.cover
+3: [       OK ] Any.cover (0 ms)
+3: [ RUN      ] Any.json
+3: [16:09:09] /home/otivedani/xgboost/dmlc-core/test/unittest/unittest_any.cc:68: {
+3:   "int": ["Int", 300], 
+3:   "vec": ["IntVector", [1, 2, 3]]
+3: }
+3: [       OK ] Any.json (0 ms)
+3: [----------] 3 tests from Any (0 ms total)
+3: 
+3: [----------] 1 test from ArrayView
+3: [ RUN      ] ArrayView.Basic
+3: [       OK ] ArrayView.Basic (0 ms)
+3: [----------] 1 test from ArrayView (0 ms total)
+3: 
+3: [----------] 4 tests from Config
+3: [ RUN      ] Config.basics
+3: k: k1	v: 1243
+3: k: k2	v: 0.5
+3: k: k3	v: abc
+3: k: k4	v: wmj
+3: k: k5	v: x=1
+3: k: k6	v: hello world
+3: k: k7	v: quote"quote
+3: k: k8	v: -1.2
+3: k: k9	v: 10
+3: k: k10	v: #not comment
+3: Proto string:
+3: k1 : 1243
+3: k2 : 0.5
+3: k3 : "abc"
+3: k4 : "wmj"
+3: k5 : "x=1"
+3: k6 : "hello world"
+3: k7 : "quote\"quote"
+3: k8 : -1.2
+3: k9 : 10
+3: k10 : "#not comment"
+3: 
+3: [       OK ] Config.basics (0 ms)
+3: [ RUN      ] Config.multi_value
+3: <<<<<< No multi-value <<<<<<<
+3: k: k1	v: 0.3
+3: k: k2	v: -0.2
+3: k: k3	v: 0
+3: Proto string:
+3: k1 : 0.3
+3: k2 : -0.2
+3: k3 : 0
+3: 
+3: <<<<<< With multi-value <<<<<<<
+3: k: k1	v: 0.1
+3: k: k1	v: 0.2
+3: k: k1	v: 0.3
+3: k: k2	v: -0.1
+3: k: k2	v: -0.2
+3: k: k3	v: 0
+3: Proto string:
+3: k1 : 0.1
+3: k1 : 0.2
+3: k1 : 0.3
+3: k2 : -0.1
+3: k2 : -0.2
+3: k3 : 0
+3: 
+3: [       OK ] Config.multi_value (0 ms)
+3: [ RUN      ] Config.set_param
+3: Proto string:
+3: k1 : 1
+3: k2 : "123"
+3: 
+3: [       OK ] Config.set_param (0 ms)
+3: [ RUN      ] Config.order
+3: <<<<<< No multi-value <<<<<<<
+3: k: k2	v: -0.2
+3: k: k1	v: 0.3
+3: k: k3	v: 0
+3: Proto string:
+3: k2 : -0.2
+3: k1 : 0.3
+3: k3 : 0
+3: 
+3: <<<<<< With multi-value <<<<<<<
+3: k: k1	v: 0.1
+3: k: k2	v: -0.1
+3: k: k1	v: 0.2
+3: k: k2	v: -0.2
+3: k: k1	v: 0.3
+3: k: k3	v: 0
+3: Proto string:
+3: k1 : 0.1
+3: k2 : -0.1
+3: k1 : 0.2
+3: k2 : -0.2
+3: k1 : 0.3
+3: k3 : 0
+3: 
+3: [       OK ] Config.order (0 ms)
+3: [----------] 4 tests from Config (0 ms total)
+3: 
+3: [----------] 1 test from Env
+3: [ RUN      ] Env.Blank
+3: [       OK ] Env.Blank (0 ms)
+3: [----------] 1 test from Env (0 ms total)
+3: 
+3: [----------] 5 tests from InputSplit
+3: [ RUN      ] InputSplit.test_split_csv_noeol
+3: [       OK ] InputSplit.test_split_csv_noeol (7 ms)
+3: [ RUN      ] InputSplit.test_split_libsvm_noeol
+3: [       OK ] InputSplit.test_split_libsvm_noeol (6 ms)
+3: [ RUN      ] InputSplit.test_split_libsvm
+3: [       OK ] InputSplit.test_split_libsvm (4 ms)
+3: [ RUN      ] InputSplit.test_split_libsvm_distributed
+3: [       OK ] InputSplit.test_split_libsvm_distributed (11 ms)
+3: [ RUN      ] InputSplit.test_recordio
+3: [       OK ] InputSplit.test_recordio (4 ms)
+3: [----------] 5 tests from InputSplit (32 ms total)
+3: 
+3: [----------] 2 tests from JSON
+3: [ RUN      ] JSON.basics
+3: [16:09:09] /home/otivedani/xgboost/dmlc-core/test/unittest/unittest_json.cc:33: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+3: [16:09:09] /home/otivedani/xgboost/dmlc-core/test/unittest/unittest_json.cc:33: [
+3:   "", 
+3:   "b", 
+3:   "cc", 
+3:   "ddd", 
+3:   "eeee", 
+3:   "fffff", 
+3:   "gggggg", 
+3:   "hhhhhhh", 
+3:   "iiiiiiii", 
+3:   "jjjjjjjjj"
+3: ]
+3: [16:09:09] /home/otivedani/xgboost/dmlc-core/test/unittest/unittest_json.cc:33: [
+3:   [1, 2, 3], 
+3:   [1, 2], 
+3:   [1, 2, 3, 4]
+3: ]
+3: [16:09:09] /home/otivedani/xgboost/dmlc-core/test/unittest/unittest_json.cc:33: [
+3:   [], 
+3:   [], 
+3:   [1, 2, 3, 4]
+3: ]
+3: [16:09:09] /home/otivedani/xgboost/dmlc-core/test/unittest/unittest_json.cc:33: {
+3:   "hellkow": 1, 
+3:   "world": 2
+3: }
+3: [16:09:09] /home/otivedani/xgboost/dmlc-core/test/unittest/unittest_json.cc:33: {
+3:   "world": 2, 
+3:   "hellkow": 1
+3: }
+3: [16:09:09] /home/otivedani/xgboost/dmlc-core/test/unittest/unittest_json.cc:33: [
+3:   "hjhjm", 
+3:   "asasa"
+3: ]
+3: [16:09:09] /home/otivedani/xgboost/dmlc-core/test/unittest/unittest_json.cc:33: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+3: [16:09:09] /home/otivedani/xgboost/dmlc-core/test/unittest/unittest_json.cc:33: [
+3:   {
+3:     "value": 0, 
+3:     "data": [
+3:       "abc"
+3:     ]
+3:   }, 
+3:   {
+3:     "value": 0, 
+3:     "data": [
+3:       "def"
+3:     ]
+3:   }
+3: ]
+3: [       OK ] JSON.basics (0 ms)
+3: [ RUN      ] JSON.any
+3: [16:09:09] /home/otivedani/xgboost/dmlc-core/test/unittest/unittest_json.cc:123: ["StrVector", [
+3:     "a", 
+3:     "b", 
+3:     "c"]]
+3: [       OK ] JSON.any (0 ms)
+3: [----------] 2 tests from JSON (0 ms total)
+3: 
+3: [----------] 2 tests from Lockfree
+3: [ RUN      ] Lockfree.ConcurrentQueue
+3: [       OK ] Lockfree.ConcurrentQueue (49 ms)
+3: [ RUN      ] Lockfree.BlockingConcurrentQueue
+3: [       OK ] Lockfree.BlockingConcurrentQueue (44 ms)
+3: [----------] 2 tests from Lockfree (93 ms total)
+3: 
+3: [----------] 1 test from Logging
+3: [ RUN      ] Logging.basics
+3: [16:09:09] /home/otivedani/xgboost/dmlc-core/test/unittest/unittest_logging.cc:8: hello
+3: [16:09:09] /home/otivedani/xgboost/dmlc-core/test/unittest/unittest_logging.cc:9: error
+3: [       OK ] Logging.basics (3 ms)
+3: [----------] 1 test from Logging (3 ms total)
+3: 
+3: [----------] 6 tests from Optional
+3: [ RUN      ] Optional.basics_int
+3: [       OK ] Optional.basics_int (0 ms)
+3: [ RUN      ] Optional.parsing_int
+3: [       OK ] Optional.parsing_int (0 ms)
+3: [ RUN      ] Optional.add_enum_int
+3: [       OK ] Optional.add_enum_int (0 ms)
+3: [ RUN      ] Optional.basics_bool
+3: [       OK ] Optional.basics_bool (0 ms)
+3: [ RUN      ] Optional.parsing_bool
+3: [       OK ] Optional.parsing_bool (0 ms)
+3: [ RUN      ] Optional.bool_in_struct
+3: [       OK ] Optional.bool_in_struct (0 ms)
+3: [----------] 6 tests from Optional (0 ms total)
+3: 
+3: [----------] 2 tests from Parameter
+3: [ RUN      ] Parameter.parsing_float
+3: [       OK ] Parameter.parsing_float (1 ms)
+3: [ RUN      ] Parameter.Update
+3: [       OK ] Parameter.Update (0 ms)
+3: [----------] 2 tests from Parameter (1 ms total)
+3: 
+3: [----------] 10 tests from CSVParser
+3: [ RUN      ] CSVParser.test_ignore_bom
+3: [       OK ] CSVParser.test_ignore_bom (0 ms)
+3: [ RUN      ] CSVParser.test_standard_case
+3: [       OK ] CSVParser.test_standard_case (0 ms)
+3: [ RUN      ] CSVParser.missing_values
+3: [       OK ] CSVParser.missing_values (0 ms)
+3: [ RUN      ] CSVParser.test_int32_parse
+3: [       OK ] CSVParser.test_int32_parse (0 ms)
+3: [ RUN      ] CSVParser.test_int64_parse
+3: [       OK ] CSVParser.test_int64_parse (0 ms)
+3: [ RUN      ] CSVParser.test_different_newlines
+3: [       OK ] CSVParser.test_different_newlines (0 ms)
+3: [ RUN      ] CSVParser.test_noeol
+3: [       OK ] CSVParser.test_noeol (0 ms)
+3: [ RUN      ] CSVParser.test_delimiter
+3: [       OK ] CSVParser.test_delimiter (0 ms)
+3: [ RUN      ] CSVParser.test_weight_column
+3: [       OK ] CSVParser.test_weight_column (0 ms)
+3: [ RUN      ] CSVParser.test_weight_column_2
+3: [       OK ] CSVParser.test_weight_column_2 (0 ms)
+3: [----------] 10 tests from CSVParser (0 ms total)
+3: 
+3: [----------] 7 tests from LibSVMParser
+3: [ RUN      ] LibSVMParser.test_qid
+3: [       OK ] LibSVMParser.test_qid (0 ms)
+3: [ RUN      ] LibSVMParser.test_qid_with_comment
+3: [       OK ] LibSVMParser.test_qid_with_comment (0 ms)
+3: [ RUN      ] LibSVMParser.test_excess_decimal_digits
+3: [       OK ] LibSVMParser.test_excess_decimal_digits (0 ms)
+3: [ RUN      ] LibSVMParser.test_indexing_mode_0_based
+3: [       OK ] LibSVMParser.test_indexing_mode_0_based (0 ms)
+3: [ RUN      ] LibSVMParser.test_indexing_mode_1_based
+3: [       OK ] LibSVMParser.test_indexing_mode_1_based (0 ms)
+3: [ RUN      ] LibSVMParser.test_indexing_mode_auto_detect
+3: [       OK ] LibSVMParser.test_indexing_mode_auto_detect (0 ms)
+3: [ RUN      ] LibSVMParser.test_indexing_mode_auto_detect_2
+3: [       OK ] LibSVMParser.test_indexing_mode_auto_detect_2 (0 ms)
+3: [----------] 7 tests from LibSVMParser (0 ms total)
+3: 
+3: [----------] 4 tests from LibFMParser
+3: [ RUN      ] LibFMParser.test_indexing_mode_0_based
+3: [       OK ] LibFMParser.test_indexing_mode_0_based (0 ms)
+3: [ RUN      ] LibFMParser.test_indexing_mode_1_based
+3: [       OK ] LibFMParser.test_indexing_mode_1_based (0 ms)
+3: [ RUN      ] LibFMParser.test_indexing_mode_auto_detect
+3: [       OK ] LibFMParser.test_indexing_mode_auto_detect (0 ms)
+3: [ RUN      ] LibFMParser.test_indexing_mode_auto_detect_2
+3: [       OK ] LibFMParser.test_indexing_mode_auto_detect_2 (0 ms)
+3: [----------] 4 tests from LibFMParser (0 ms total)
+3: 
+3: [----------] 3 tests from Serializer
+3: [ RUN      ] Serializer.basics
+3: [16:09:09] /home/otivedani/xgboost/dmlc-core/test/unittest/unittest_serializer.cc:78: jere
+3: [       OK ] Serializer.basics (0 ms)
+3: [ RUN      ] Serializer.endian
+3: [       OK ] Serializer.endian (0 ms)
+3: [ RUN      ] Serializer.endian_detection
+3: [33mWarning[0m: Skipping this test because DMLC_UNIT_TEST_LITTLE_ENDIAN is not set
+3: [       OK ] Serializer.endian_detection (0 ms)
+3: [----------] 3 tests from Serializer (0 ms total)
+3: 
+3: [----------] 2 tests from TemporaryDirectory
+3: [ RUN      ] TemporaryDirectory.test_basic
+3: [       OK ] TemporaryDirectory.test_basic (1 ms)
+3: [ RUN      ] TemporaryDirectory.test_recursive
+3: [       OK ] TemporaryDirectory.test_recursive (18 ms)
+3: [----------] 2 tests from TemporaryDirectory (19 ms total)
+3: 
+3: [----------] 7 tests from ThreadGroup
+3: [ RUN      ] ThreadGroup.ThreadLaunchAutoRemove
+3: [       OK ] ThreadGroup.ThreadLaunchAutoRemove (25 ms)
+3: [ RUN      ] ThreadGroup.ThreadLaunchAutoRemoveWithDelay
+3: [       OK ] ThreadGroup.ThreadLaunchAutoRemoveWithDelay (41 ms)
+3: [ RUN      ] ThreadGroup.ThreadLaunchNoAutoRemove
+3: [       OK ] ThreadGroup.ThreadLaunchNoAutoRemove (30 ms)
+3: [ RUN      ] ThreadGroup.ThreadLaunchNoAutoRemoveWithDelay
+3: [       OK ] ThreadGroup.ThreadLaunchNoAutoRemoveWithDelay (46 ms)
+3: [ RUN      ] ThreadGroup.ThreadLaunchQueueThread
+3: ITEM: 1
+3: ITEM: 2
+3: ITEM: 3
+3: ITEM: 4
+3: [       OK ] ThreadGroup.ThreadLaunchQueueThread (1 ms)
+3: [ RUN      ] ThreadGroup.TimerThread
+3: [5] TIME: 50
+3: [10] TIME: 101
+3: [15] TIME: 152
+3: [20] TIME: 202
+3: [25] TIME: 254
+3: [30] TIME: 305
+3: [35] TIME: 356
+3: [40] TIME: 408
+3: [45] TIME: 459
+3: [       OK ] ThreadGroup.TimerThread (501 ms)
+3: [ RUN      ] ThreadGroup.TimerThreadSimple
+3: [5] TIME: 51
+3: [10] TIME: 103
+3: [15] TIME: 154
+3: [20] TIME: 206
+3: [25] TIME: 258
+3: [30] TIME: 309
+3: [35] TIME: 361
+3: [40] TIME: 413
+3: [45] TIME: 464
+3: [       OK ] ThreadGroup.TimerThreadSimple (506 ms)
+3: [----------] 7 tests from ThreadGroup (1152 ms total)
+3: 
+3: [----------] 3 tests from ThreadedIter
+3: [ RUN      ] ThreadedIter.basics
+3: [16:09:11] /home/otivedani/xgboost/dmlc-core/test/unittest/unittest_threaditer.cc:54: 0
+3: [16:09:11] /home/otivedani/xgboost/dmlc-core/test/unittest/unittest_threaditer.cc:54: 1
+3: [16:09:11] /home/otivedani/xgboost/dmlc-core/test/unittest/unittest_threaditer.cc:54: 2
+3: [16:09:11] /home/otivedani/xgboost/dmlc-core/test/unittest/unittest_threaditer.cc:54: 3
+3: [16:09:11] /home/otivedani/xgboost/dmlc-core/test/unittest/unittest_threaditer.cc:54: 4
+3: [16:09:11] /home/otivedani/xgboost/dmlc-core/test/unittest/unittest_threaditer.cc:54: 5
+3: [16:09:11] /home/otivedani/xgboost/dmlc-core/test/unittest/unittest_threaditer.cc:54: 6
+3: [16:09:11] /home/otivedani/xgboost/dmlc-core/test/unittest/unittest_threaditer.cc:54: 7
+3: [16:09:12] /home/otivedani/xgboost/dmlc-core/test/unittest/unittest_threaditer.cc:54: 8
+3: [16:09:12] /home/otivedani/xgboost/dmlc-core/test/unittest/unittest_threaditer.cc:54: 9
+3: [16:09:12] /home/otivedani/xgboost/dmlc-core/test/unittest/unittest_threaditer.cc:67: 0
+3: [16:09:12] /home/otivedani/xgboost/dmlc-core/test/unittest/unittest_threaditer.cc:67: 1
+3: [16:09:13] /home/otivedani/xgboost/dmlc-core/test/unittest/unittest_threaditer.cc:67: 2
+3: [16:09:13] /home/otivedani/xgboost/dmlc-core/test/unittest/unittest_threaditer.cc:67: 3
+3: [16:09:13] /home/otivedani/xgboost/dmlc-core/test/unittest/unittest_threaditer.cc:67: 4
+3: [16:09:13] /home/otivedani/xgboost/dmlc-core/test/unittest/unittest_threaditer.cc:67: 5
+3: [16:09:13] /home/otivedani/xgboost/dmlc-core/test/unittest/unittest_threaditer.cc:67: 6
+3: [16:09:13] /home/otivedani/xgboost/dmlc-core/test/unittest/unittest_threaditer.cc:67: 7
+3: [16:09:13] /home/otivedani/xgboost/dmlc-core/test/unittest/unittest_threaditer.cc:67: 8
+3: [16:09:13] /home/otivedani/xgboost/dmlc-core/test/unittest/unittest_threaditer.cc:67: 9
+3: [16:09:13] /home/otivedani/xgboost/dmlc-core/test/unittest/unittest_threaditer.cc:74: finish
+3: [       OK ] ThreadedIter.basics (2714 ms)
+3: [ RUN      ] ThreadedIter.dmlc_exception
+3: [16:09:14] /home/otivedani/xgboost/dmlc-core/test/unittest/unittest_threaditer_exc_handling.cc:87: recycle exception caught
+3: [16:09:15] /home/otivedani/xgboost/dmlc-core/test/unittest/unittest_threaditer_exc_handling.cc:99: next exception caught
+3: [16:09:15] /home/otivedani/xgboost/dmlc-core/test/unittest/unittest_threaditer_exc_handling.cc:102: finish
+3: [16:09:15] /home/otivedani/xgboost/dmlc-core/test/unittest/unittest_threaditer_exc_handling.cc:112: beforefirst exception caught
+3: [16:09:15] /home/otivedani/xgboost/dmlc-core/test/unittest/unittest_threaditer_exc_handling.cc:118: beforefirst exception thrown/caught
+3: [       OK ] ThreadedIter.dmlc_exception (1413 ms)
+3: [ RUN      ] ThreadedIter.std_exception
+3: [16:09:15] /home/otivedani/xgboost/dmlc-core/test/unittest/unittest_threaditer_exc_handling.cc:43: Throw std::exception
+3: [16:09:16] /home/otivedani/xgboost/dmlc-core/test/unittest/unittest_threaditer_exc_handling.cc:139: recycle exception caught
+3: [16:09:16] /home/otivedani/xgboost/dmlc-core/test/unittest/unittest_threaditer_exc_handling.cc:43: Throw std::exception
+3: [16:09:16] /home/otivedani/xgboost/dmlc-core/test/unittest/unittest_threaditer_exc_handling.cc:151: next exception caught
+3: [16:09:16] /home/otivedani/xgboost/dmlc-core/test/unittest/unittest_threaditer_exc_handling.cc:154: finish
+3: [16:09:16] /home/otivedani/xgboost/dmlc-core/test/unittest/unittest_threaditer_exc_handling.cc:164: beforefirst exception caught
+3: [16:09:16] /home/otivedani/xgboost/dmlc-core/test/unittest/unittest_threaditer_exc_handling.cc:170: beforefirst exception thrown/caught
+3: [       OK ] ThreadedIter.std_exception (1412 ms)
+3: [----------] 3 tests from ThreadedIter (5540 ms total)
+3: 
+3: [----------] Global test environment tear-down
+3: [==========] 63 tests from 17 test suites ran. (6840 ms total)
+3: [  PASSED  ] 63 tests.
+3/6 Test #3: AllTestsInDMLCUnitTests ..........   Passed    6.84 sec
+test 4
+    Start 4: lazy_recover
+
+4: Test command: /home/otivedani/xgboost/build/rabit/lazy_recover
+4: Test timeout computed to be: 10000000
+4: Usage: <ndata> <config>
+4/6 Test #4: lazy_recover .....................   Passed    0.01 sec
+test 5
+    Start 5: local_recover
+
+5: Test command: /home/otivedani/xgboost/build/rabit/local_recover
+5: Test timeout computed to be: 10000000
+5: Usage: <ndata>
+5/6 Test #5: local_recover ....................   Passed    0.00 sec
+test 6
+    Start 6: model_recover
+
+6: Test command: /home/otivedani/xgboost/build/rabit/model_recover
+6: Test timeout computed to be: 10000000
+6: Usage: <ndata> <config>
+6/6 Test #6: model_recover ....................   Passed    0.00 sec
+
+83% tests passed, 1 tests failed out of 6
+
+Total Test time (real) =  70.24 sec
+
+The following tests FAILED:
+	  1 - TestXGBoostLib (Child aborted)
+Errors while running CTest

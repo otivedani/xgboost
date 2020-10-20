@@ -1,0 +1,335 @@
+Scanning dependencies of target dmlc
+[  0%] Building CXX object dmlc-core/CMakeFiles/dmlc.dir/src/config.cc.o
+[  0%] Building CXX object dmlc-core/CMakeFiles/dmlc.dir/src/data.cc.o
+[  1%] Building CXX object dmlc-core/CMakeFiles/dmlc.dir/src/io.cc.o
+[  1%] Building CXX object dmlc-core/CMakeFiles/dmlc.dir/src/recordio.cc.o
+[  2%] Building CXX object dmlc-core/CMakeFiles/dmlc.dir/src/io/line_split.cc.o
+[  2%] Building CXX object dmlc-core/CMakeFiles/dmlc.dir/src/io/recordio_split.cc.o
+[  2%] Building CXX object dmlc-core/CMakeFiles/dmlc.dir/src/io/indexed_recordio_split.cc.o
+[  3%] Building CXX object dmlc-core/CMakeFiles/dmlc.dir/src/io/input_split_base.cc.o
+[  3%] Building CXX object dmlc-core/CMakeFiles/dmlc.dir/src/io/filesys.cc.o
+[  4%] Building CXX object dmlc-core/CMakeFiles/dmlc.dir/src/io/local_filesys.cc.o
+[  4%] Linking CXX static library libdmlc.a
+[  4%] Built target dmlc
+Scanning dependencies of target rabit
+[  4%] Building CXX object rabit/CMakeFiles/rabit.dir/src/allreduce_base.cc.o
+[  5%] Building CXX object rabit/CMakeFiles/rabit.dir/src/allreduce_robust.cc.o
+[  5%] Building CXX object rabit/CMakeFiles/rabit.dir/src/engine.cc.o
+[  6%] Building CXX object rabit/CMakeFiles/rabit.dir/src/c_api.cc.o
+[  6%] Linking CXX static library librabit.a
+[  6%] Built target rabit
+Scanning dependencies of target objxgboost
+[  7%] Building CXX object src/CMakeFiles/objxgboost.dir/c_api/c_api.cc.o
+[  7%] Building CXX object src/CMakeFiles/objxgboost.dir/c_api/c_api_error.cc.o
+[  8%] Building CXX object src/CMakeFiles/objxgboost.dir/common/charconv.cc.o
+[  8%] Building CXX object src/CMakeFiles/objxgboost.dir/common/common.cc.o
+[  9%] Building CXX object src/CMakeFiles/objxgboost.dir/common/hist_util.cc.o
+[  9%] Building CXX object src/CMakeFiles/objxgboost.dir/common/host_device_vector.cc.o
+[  9%] Building CXX object src/CMakeFiles/objxgboost.dir/common/io.cc.o
+[ 10%] Building CXX object src/CMakeFiles/objxgboost.dir/common/json.cc.o
+[ 10%] Building CXX object src/CMakeFiles/objxgboost.dir/common/quantile.cc.o
+[ 11%] Building CXX object src/CMakeFiles/objxgboost.dir/common/random.cc.o
+[ 11%] Building CXX object src/CMakeFiles/objxgboost.dir/common/survival_util.cc.o
+[ 11%] Building CXX object src/CMakeFiles/objxgboost.dir/common/timer.cc.o
+[ 12%] Building CXX object src/CMakeFiles/objxgboost.dir/common/version.cc.o
+[ 12%] Building CXX object src/CMakeFiles/objxgboost.dir/data/data.cc.o
+[ 13%] Building CXX object src/CMakeFiles/objxgboost.dir/data/ellpack_page.cc.o
+[ 13%] Building CXX object src/CMakeFiles/objxgboost.dir/data/ellpack_page_source.cc.o
+[ 14%] Building CXX object src/CMakeFiles/objxgboost.dir/data/simple_dmatrix.cc.o
+[ 14%] Building CXX object src/CMakeFiles/objxgboost.dir/data/sparse_page_dmatrix.cc.o
+[ 14%] Building CXX object src/CMakeFiles/objxgboost.dir/data/sparse_page_raw_format.cc.o
+[ 15%] Building CXX object src/CMakeFiles/objxgboost.dir/gbm/gblinear.cc.o
+[ 15%] Building CXX object src/CMakeFiles/objxgboost.dir/gbm/gblinear_model.cc.o
+[ 16%] Building CXX object src/CMakeFiles/objxgboost.dir/gbm/gbm.cc.o
+[ 16%] Building CXX object src/CMakeFiles/objxgboost.dir/gbm/gbtree.cc.o
+[ 16%] Building CXX object src/CMakeFiles/objxgboost.dir/gbm/gbtree_model.cc.o
+[ 17%] Building CXX object src/CMakeFiles/objxgboost.dir/learner.cc.o
+[ 17%] Building CXX object src/CMakeFiles/objxgboost.dir/linear/linear_updater.cc.o
+[ 18%] Building CXX object src/CMakeFiles/objxgboost.dir/linear/updater_coordinate.cc.o
+[ 18%] Building CXX object src/CMakeFiles/objxgboost.dir/linear/updater_shotgun.cc.o
+[ 19%] Building CXX object src/CMakeFiles/objxgboost.dir/logging.cc.o
+[ 19%] Building CXX object src/CMakeFiles/objxgboost.dir/metric/elementwise_metric.cc.o
+[ 19%] Building CXX object src/CMakeFiles/objxgboost.dir/metric/metric.cc.o
+[ 20%] Building CXX object src/CMakeFiles/objxgboost.dir/metric/multiclass_metric.cc.o
+[ 20%] Building CXX object src/CMakeFiles/objxgboost.dir/metric/rank_metric.cc.o
+[ 21%] Building CXX object src/CMakeFiles/objxgboost.dir/metric/survival_metric.cc.o
+[ 21%] Building CXX object src/CMakeFiles/objxgboost.dir/objective/aft_obj.cc.o
+[ 21%] Building CXX object src/CMakeFiles/objxgboost.dir/objective/hinge.cc.o
+[ 22%] Building CXX object src/CMakeFiles/objxgboost.dir/objective/multiclass_obj.cc.o
+[ 22%] Building CXX object src/CMakeFiles/objxgboost.dir/objective/objective.cc.o
+[ 23%] Building CXX object src/CMakeFiles/objxgboost.dir/objective/rank_obj.cc.o
+[ 23%] Building CXX object src/CMakeFiles/objxgboost.dir/objective/regression_obj.cc.o
+[ 24%] Building CXX object src/CMakeFiles/objxgboost.dir/predictor/cpu_predictor.cc.o
+[ 24%] Building CXX object src/CMakeFiles/objxgboost.dir/predictor/predictor.cc.o
+[ 24%] Building CXX object src/CMakeFiles/objxgboost.dir/tree/constraints.cc.o
+[ 25%] Building CXX object src/CMakeFiles/objxgboost.dir/tree/param.cc.o
+[ 25%] Building CXX object src/CMakeFiles/objxgboost.dir/tree/tree_model.cc.o
+[ 26%] Building CXX object src/CMakeFiles/objxgboost.dir/tree/tree_updater.cc.o
+[ 26%] Building CXX object src/CMakeFiles/objxgboost.dir/tree/updater_colmaker.cc.o
+[ 26%] Building CXX object src/CMakeFiles/objxgboost.dir/tree/updater_histmaker.cc.o
+[ 27%] Building CXX object src/CMakeFiles/objxgboost.dir/tree/updater_prune.cc.o
+[ 27%] Building CXX object src/CMakeFiles/objxgboost.dir/tree/updater_quantile_hist.cc.o
+[ 28%] Building CXX object src/CMakeFiles/objxgboost.dir/tree/updater_refresh.cc.o
+[ 28%] Building CXX object src/CMakeFiles/objxgboost.dir/tree/updater_sync.cc.o
+[ 29%] Building CUDA object src/CMakeFiles/objxgboost.dir/c_api/c_api.cu.o
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+[ 29%] Building CUDA object src/CMakeFiles/objxgboost.dir/common/common.cu.o
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+[ 29%] Building CUDA object src/CMakeFiles/objxgboost.dir/common/device_helpers.cu.o
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+[ 30%] Building CUDA object src/CMakeFiles/objxgboost.dir/common/hist_util.cu.o
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+[ 30%] Building CUDA object src/CMakeFiles/objxgboost.dir/common/host_device_vector.cu.o
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+[ 31%] Building CUDA object src/CMakeFiles/objxgboost.dir/common/quantile.cu.o
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+[ 31%] Building CUDA object src/CMakeFiles/objxgboost.dir/data/data.cu.o
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+[ 31%] Building CUDA object src/CMakeFiles/objxgboost.dir/data/ellpack_page.cu.o
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+[ 32%] Building CUDA object src/CMakeFiles/objxgboost.dir/data/ellpack_page_raw_format.cu.o
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+[ 32%] Building CUDA object src/CMakeFiles/objxgboost.dir/data/ellpack_page_source.cu.o
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+[ 33%] Building CUDA object src/CMakeFiles/objxgboost.dir/data/iterative_device_dmatrix.cu.o
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+[ 33%] Building CUDA object src/CMakeFiles/objxgboost.dir/data/proxy_dmatrix.cu.o
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+[ 34%] Building CUDA object src/CMakeFiles/objxgboost.dir/data/simple_dmatrix.cu.o
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+[ 34%] Building CUDA object src/CMakeFiles/objxgboost.dir/linear/updater_gpu_coordinate.cu.o
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+[ 34%] Building CUDA object src/CMakeFiles/objxgboost.dir/metric/elementwise_metric.cu.o
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+[ 35%] Building CUDA object src/CMakeFiles/objxgboost.dir/metric/multiclass_metric.cu.o
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+[ 35%] Building CUDA object src/CMakeFiles/objxgboost.dir/metric/rank_metric.cu.o
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+[ 36%] Building CUDA object src/CMakeFiles/objxgboost.dir/metric/survival_metric.cu.o
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+[ 36%] Building CUDA object src/CMakeFiles/objxgboost.dir/objective/aft_obj.cu.o
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+[ 36%] Building CUDA object src/CMakeFiles/objxgboost.dir/objective/hinge.cu.o
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+[ 37%] Building CUDA object src/CMakeFiles/objxgboost.dir/objective/multiclass_obj.cu.o
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+[ 37%] Building CUDA object src/CMakeFiles/objxgboost.dir/objective/rank_obj.cu.o
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+[ 38%] Building CUDA object src/CMakeFiles/objxgboost.dir/objective/regression_obj.cu.o
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+[ 38%] Building CUDA object src/CMakeFiles/objxgboost.dir/predictor/gpu_predictor.cu.o
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+[ 39%] Building CUDA object src/CMakeFiles/objxgboost.dir/tree/constraints.cu.o
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+[ 39%] Building CUDA object src/CMakeFiles/objxgboost.dir/tree/gpu_hist/evaluate_splits.cu.o
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+[ 39%] Building CUDA object src/CMakeFiles/objxgboost.dir/tree/gpu_hist/feature_groups.cu.o
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+[ 40%] Building CUDA object src/CMakeFiles/objxgboost.dir/tree/gpu_hist/gradient_based_sampler.cu.o
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+[ 40%] Building CUDA object src/CMakeFiles/objxgboost.dir/tree/gpu_hist/histogram.cu.o
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+[ 41%] Building CUDA object src/CMakeFiles/objxgboost.dir/tree/gpu_hist/row_partitioner.cu.o
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+[ 41%] Building CUDA object src/CMakeFiles/objxgboost.dir/tree/updater_gpu_hist.cu.o
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+[ 41%] Built target objxgboost
+Scanning dependencies of target runxgboost
+[ 42%] Building CXX object CMakeFiles/runxgboost.dir/src/cli_main.cc.o
+[ 42%] Linking CXX executable ../xgboost
+[ 42%] Built target runxgboost
+Scanning dependencies of target xgboost
+[ 43%] Linking CXX shared library ../lib/libxgboost.so
+[ 43%] Built target xgboost
+Scanning dependencies of target gtest
+[ 44%] Building CXX object googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
+[ 44%] Linking CXX static library ../../lib/libgtest.a
+[ 44%] Built target gtest
+Scanning dependencies of target dmlc_unit_tests
+[ 45%] Building CXX object dmlc-core/test/unittest/CMakeFiles/dmlc_unit_tests.dir/unittest_any.cc.o
+[ 45%] Building CXX object dmlc-core/test/unittest/CMakeFiles/dmlc_unit_tests.dir/unittest_array_view.cc.o
+[ 45%] Building CXX object dmlc-core/test/unittest/CMakeFiles/dmlc_unit_tests.dir/unittest_config.cc.o
+[ 46%] Building CXX object dmlc-core/test/unittest/CMakeFiles/dmlc_unit_tests.dir/unittest_env.cc.o
+[ 46%] Building CXX object dmlc-core/test/unittest/CMakeFiles/dmlc_unit_tests.dir/unittest_inputsplit.cc.o
+[ 47%] Building CXX object dmlc-core/test/unittest/CMakeFiles/dmlc_unit_tests.dir/unittest_json.cc.o
+[ 47%] Building CXX object dmlc-core/test/unittest/CMakeFiles/dmlc_unit_tests.dir/unittest_lockfree.cc.o
+[ 47%] Building CXX object dmlc-core/test/unittest/CMakeFiles/dmlc_unit_tests.dir/unittest_logging.cc.o
+[ 48%] Building CXX object dmlc-core/test/unittest/CMakeFiles/dmlc_unit_tests.dir/unittest_main.cc.o
+[ 48%] Building CXX object dmlc-core/test/unittest/CMakeFiles/dmlc_unit_tests.dir/unittest_optional.cc.o
+[ 49%] Building CXX object dmlc-core/test/unittest/CMakeFiles/dmlc_unit_tests.dir/unittest_param.cc.o
+[ 49%] Building CXX object dmlc-core/test/unittest/CMakeFiles/dmlc_unit_tests.dir/unittest_parser.cc.o
+[ 50%] Building CXX object dmlc-core/test/unittest/CMakeFiles/dmlc_unit_tests.dir/unittest_serializer.cc.o
+[ 50%] Building CXX object dmlc-core/test/unittest/CMakeFiles/dmlc_unit_tests.dir/unittest_tempdir.cc.o
+[ 50%] Building CXX object dmlc-core/test/unittest/CMakeFiles/dmlc_unit_tests.dir/unittest_thread_group.cc.o
+[ 51%] Building CXX object dmlc-core/test/unittest/CMakeFiles/dmlc_unit_tests.dir/unittest_threaditer.cc.o
+[ 51%] Building CXX object dmlc-core/test/unittest/CMakeFiles/dmlc_unit_tests.dir/unittest_threaditer_exc_handling.cc.o
+[ 52%] Linking CXX executable dmlc_unit_tests
+[ 52%] Built target dmlc_unit_tests
+Scanning dependencies of target gmock
+[ 52%] Building CXX object googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o
+[ 52%] Linking CXX static library ../../lib/libgmock.a
+[ 52%] Built target gmock
+Scanning dependencies of target gmock_main
+[ 53%] Building CXX object googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o
+[ 53%] Linking CXX static library ../../lib/libgmock_main.a
+[ 53%] Built target gmock_main
+Scanning dependencies of target gtest_main
+[ 54%] Building CXX object googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
+[ 54%] Linking CXX static library ../../lib/libgtest_main.a
+[ 54%] Built target gtest_main
+Scanning dependencies of target rabit_mock_static
+[ 55%] Building CXX object rabit/CMakeFiles/rabit_mock_static.dir/src/allreduce_base.cc.o
+[ 55%] Building CXX object rabit/CMakeFiles/rabit_mock_static.dir/src/allreduce_robust.cc.o
+[ 55%] Building CXX object rabit/CMakeFiles/rabit_mock_static.dir/src/engine_mock.cc.o
+[ 56%] Building CXX object rabit/CMakeFiles/rabit_mock_static.dir/src/c_api.cc.o
+[ 56%] Linking CXX static library librabit_mock_static.a
+[ 56%] Built target rabit_mock_static
+Scanning dependencies of target model_recover
+[ 56%] Building CXX object rabit/CMakeFiles/model_recover.dir/test/model_recover.cc.o
+[ 56%] Linking CXX executable model_recover
+[ 56%] Built target model_recover
+Scanning dependencies of target local_recover
+[ 56%] Building CXX object rabit/CMakeFiles/local_recover.dir/test/local_recover.cc.o
+[ 57%] Linking CXX executable local_recover
+[ 57%] Built target local_recover
+Scanning dependencies of target lazy_recover
+[ 57%] Building CXX object rabit/CMakeFiles/lazy_recover.dir/test/lazy_recover.cc.o
+[ 58%] Linking CXX executable lazy_recover
+[ 58%] Built target lazy_recover
+Scanning dependencies of target testxgboost
+[ 58%] Building CXX object tests/cpp/CMakeFiles/testxgboost.dir/c_api/test_c_api.cc.o
+[ 59%] Building CXX object tests/cpp/CMakeFiles/testxgboost.dir/common/test_bitfield.cc.o
+[ 59%] Building CXX object tests/cpp/CMakeFiles/testxgboost.dir/common/test_charconv.cc.o
+[ 60%] Building CXX object tests/cpp/CMakeFiles/testxgboost.dir/common/test_column_matrix.cc.o
+[ 60%] Building CXX object tests/cpp/CMakeFiles/testxgboost.dir/common/test_common.cc.o
+[ 61%] Building CXX object tests/cpp/CMakeFiles/testxgboost.dir/common/test_compressed_iterator.cc.o
+[ 61%] Building CXX object tests/cpp/CMakeFiles/testxgboost.dir/common/test_config.cc.o
+[ 61%] Building CXX object tests/cpp/CMakeFiles/testxgboost.dir/common/test_group_data.cc.o
+[ 62%] Building CXX object tests/cpp/CMakeFiles/testxgboost.dir/common/test_hist_util.cc.o
+[ 62%] Building CXX object tests/cpp/CMakeFiles/testxgboost.dir/common/test_intrusive_ptr.cc.o
+[ 63%] Building CXX object tests/cpp/CMakeFiles/testxgboost.dir/common/test_io.cc.o
+[ 63%] Building CXX object tests/cpp/CMakeFiles/testxgboost.dir/common/test_json.cc.o
+[ 63%] Building CXX object tests/cpp/CMakeFiles/testxgboost.dir/common/test_monitor.cc.o
+[ 64%] Building CXX object tests/cpp/CMakeFiles/testxgboost.dir/common/test_parameter.cc.o
+[ 64%] Building CXX object tests/cpp/CMakeFiles/testxgboost.dir/common/test_partition_builder.cc.o
+[ 65%] Building CXX object tests/cpp/CMakeFiles/testxgboost.dir/common/test_probability_distribution.cc.o
+[ 65%] Building CXX object tests/cpp/CMakeFiles/testxgboost.dir/common/test_quantile.cc.o
+[ 66%] Building CXX object tests/cpp/CMakeFiles/testxgboost.dir/common/test_random.cc.o
+[ 66%] Building CXX object tests/cpp/CMakeFiles/testxgboost.dir/common/test_span.cc.o
+[ 66%] Building CXX object tests/cpp/CMakeFiles/testxgboost.dir/common/test_survival_util.cc.o
+[ 67%] Building CXX object tests/cpp/CMakeFiles/testxgboost.dir/common/test_threading_utils.cc.o
+[ 67%] Building CXX object tests/cpp/CMakeFiles/testxgboost.dir/common/test_transform_range.cc.o
+[ 68%] Building CXX object tests/cpp/CMakeFiles/testxgboost.dir/common/test_version.cc.o
+[ 68%] Building CXX object tests/cpp/CMakeFiles/testxgboost.dir/data/test_adapter.cc.o
+[ 68%] Building CXX object tests/cpp/CMakeFiles/testxgboost.dir/data/test_array_interface.cc.o
+[ 69%] Building CXX object tests/cpp/CMakeFiles/testxgboost.dir/data/test_data.cc.o
+[ 69%] Building CXX object tests/cpp/CMakeFiles/testxgboost.dir/data/test_metainfo.cc.o
+[ 70%] Building CXX object tests/cpp/CMakeFiles/testxgboost.dir/data/test_simple_dmatrix.cc.o
+[ 70%] Building CXX object tests/cpp/CMakeFiles/testxgboost.dir/data/test_sparse_page_dmatrix.cc.o
+[ 71%] Building CXX object tests/cpp/CMakeFiles/testxgboost.dir/gbm/test_gblinear.cc.o
+[ 71%] Building CXX object tests/cpp/CMakeFiles/testxgboost.dir/gbm/test_gbtree.cc.o
+[ 71%] Building CXX object tests/cpp/CMakeFiles/testxgboost.dir/helpers.cc.o
+[ 72%] Building CXX object tests/cpp/CMakeFiles/testxgboost.dir/linear/test_linear.cc.o
+[ 72%] Building CXX object tests/cpp/CMakeFiles/testxgboost.dir/metric/test_elementwise_metric.cc.o
+[ 73%] Building CXX object tests/cpp/CMakeFiles/testxgboost.dir/metric/test_metric.cc.o
+[ 73%] Building CXX object tests/cpp/CMakeFiles/testxgboost.dir/metric/test_multiclass_metric.cc.o
+[ 73%] Building CXX object tests/cpp/CMakeFiles/testxgboost.dir/metric/test_rank_metric.cc.o
+[ 74%] Building CXX object tests/cpp/CMakeFiles/testxgboost.dir/metric/test_survival_metric.cc.o
+[ 74%] Building CXX object tests/cpp/CMakeFiles/testxgboost.dir/objective/test_aft_obj.cc.o
+[ 75%] Building CXX object tests/cpp/CMakeFiles/testxgboost.dir/objective/test_hinge.cc.o
+[ 75%] Building CXX object tests/cpp/CMakeFiles/testxgboost.dir/objective/test_multiclass_obj.cc.o
+[ 76%] Building CXX object tests/cpp/CMakeFiles/testxgboost.dir/objective/test_objective.cc.o
+[ 76%] Building CXX object tests/cpp/CMakeFiles/testxgboost.dir/objective/test_ranking_obj.cc.o
+[ 76%] Building CXX object tests/cpp/CMakeFiles/testxgboost.dir/objective/test_regression_obj.cc.o
+[ 77%] Building CXX object tests/cpp/CMakeFiles/testxgboost.dir/plugin/test_example_objective.cc.o
+[ 77%] Building CXX object tests/cpp/CMakeFiles/testxgboost.dir/predictor/test_cpu_predictor.cc.o
+[ 78%] Building CXX object tests/cpp/CMakeFiles/testxgboost.dir/predictor/test_predictor.cc.o
+[ 78%] Building CXX object tests/cpp/CMakeFiles/testxgboost.dir/rabit/allreduce_base_test.cc.o
+[ 78%] Building CXX object tests/cpp/CMakeFiles/testxgboost.dir/rabit/allreduce_mock_test.cc.o
+[ 79%] Building CXX object tests/cpp/CMakeFiles/testxgboost.dir/rabit/allreduce_robust_test.cc.o
+[ 79%] Building CXX object tests/cpp/CMakeFiles/testxgboost.dir/rabit/test_io.cc.o
+[ 80%] Building CXX object tests/cpp/CMakeFiles/testxgboost.dir/rabit/test_utils.cc.o
+[ 80%] Building CXX object tests/cpp/CMakeFiles/testxgboost.dir/test_helpers.cc.o
+[ 81%] Building CXX object tests/cpp/CMakeFiles/testxgboost.dir/test_learner.cc.o
+[ 81%] Building CXX object tests/cpp/CMakeFiles/testxgboost.dir/test_logging.cc.o
+[ 81%] Building CXX object tests/cpp/CMakeFiles/testxgboost.dir/test_main.cc.o
+[ 82%] Building CXX object tests/cpp/CMakeFiles/testxgboost.dir/test_serialization.cc.o
+[ 82%] Building CXX object tests/cpp/CMakeFiles/testxgboost.dir/tree/test_constraints.cc.o
+[ 83%] Building CXX object tests/cpp/CMakeFiles/testxgboost.dir/tree/test_histmaker.cc.o
+[ 83%] Building CXX object tests/cpp/CMakeFiles/testxgboost.dir/tree/test_param.cc.o
+[ 83%] Building CXX object tests/cpp/CMakeFiles/testxgboost.dir/tree/test_prune.cc.o
+[ 84%] Building CXX object tests/cpp/CMakeFiles/testxgboost.dir/tree/test_quantile_hist.cc.o
+[ 84%] Building CXX object tests/cpp/CMakeFiles/testxgboost.dir/tree/test_refresh.cc.o
+[ 85%] Building CXX object tests/cpp/CMakeFiles/testxgboost.dir/tree/test_tree_model.cc.o
+[ 85%] Building CXX object tests/cpp/CMakeFiles/testxgboost.dir/tree/test_tree_stat.cc.o
+[ 86%] Building CUDA object tests/cpp/CMakeFiles/testxgboost.dir/common/test_bitfield.cu.o
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+[ 86%] Building CUDA object tests/cpp/CMakeFiles/testxgboost.dir/common/test_device_helpers.cu.o
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+[ 86%] Building CUDA object tests/cpp/CMakeFiles/testxgboost.dir/common/test_gpu_compressed_iterator.cu.o
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+[ 87%] Building CUDA object tests/cpp/CMakeFiles/testxgboost.dir/common/test_hist_util.cu.o
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+[ 87%] Building CUDA object tests/cpp/CMakeFiles/testxgboost.dir/common/test_host_device_vector.cu.o
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+[ 88%] Building CUDA object tests/cpp/CMakeFiles/testxgboost.dir/common/test_quantile.cu.o
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+[ 88%] Building CUDA object tests/cpp/CMakeFiles/testxgboost.dir/common/test_span.cu.o
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+[ 88%] Building CUDA object tests/cpp/CMakeFiles/testxgboost.dir/common/test_transform_range.cu.o
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+[ 89%] Building CUDA object tests/cpp/CMakeFiles/testxgboost.dir/data/test_device_adapter.cu.o
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+[ 89%] Building CUDA object tests/cpp/CMakeFiles/testxgboost.dir/data/test_ellpack_page.cu.o
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+[ 90%] Building CUDA object tests/cpp/CMakeFiles/testxgboost.dir/data/test_iterative_device_dmatrix.cu.o
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+[ 90%] Building CUDA object tests/cpp/CMakeFiles/testxgboost.dir/data/test_metainfo.cu.o
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+[ 91%] Building CUDA object tests/cpp/CMakeFiles/testxgboost.dir/data/test_proxy_dmatrix.cu.o
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+[ 91%] Building CUDA object tests/cpp/CMakeFiles/testxgboost.dir/data/test_simple_dmatrix.cu.o
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+[ 91%] Building CUDA object tests/cpp/CMakeFiles/testxgboost.dir/data/test_sparse_page_dmatrix.cu.o
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+[ 92%] Building CUDA object tests/cpp/CMakeFiles/testxgboost.dir/helpers.cu.o
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+[ 92%] Building CUDA object tests/cpp/CMakeFiles/testxgboost.dir/linear/test_linear.cu.o
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+[ 93%] Building CUDA object tests/cpp/CMakeFiles/testxgboost.dir/metric/test_elementwise_metric.cu.o
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+[ 93%] Building CUDA object tests/cpp/CMakeFiles/testxgboost.dir/metric/test_multiclass_metric.cu.o
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+[ 93%] Building CUDA object tests/cpp/CMakeFiles/testxgboost.dir/metric/test_rank_metric.cu.o
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+[ 94%] Building CUDA object tests/cpp/CMakeFiles/testxgboost.dir/metric/test_survival_metric.cu.o
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+[ 94%] Building CUDA object tests/cpp/CMakeFiles/testxgboost.dir/objective/test_aft_obj.cu.o
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+[ 95%] Building CUDA object tests/cpp/CMakeFiles/testxgboost.dir/objective/test_hinge.cu.o
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+[ 95%] Building CUDA object tests/cpp/CMakeFiles/testxgboost.dir/objective/test_multiclass_obj_gpu.cu.o
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+[ 96%] Building CUDA object tests/cpp/CMakeFiles/testxgboost.dir/objective/test_ranking_obj_gpu.cu.o
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+[ 96%] Building CUDA object tests/cpp/CMakeFiles/testxgboost.dir/objective/test_regression_obj_gpu.cu.o
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+[ 96%] Building CUDA object tests/cpp/CMakeFiles/testxgboost.dir/predictor/test_gpu_predictor.cu.o
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+[ 97%] Building CUDA object tests/cpp/CMakeFiles/testxgboost.dir/tree/gpu_hist/test_driver.cu.o
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+[ 97%] Building CUDA object tests/cpp/CMakeFiles/testxgboost.dir/tree/gpu_hist/test_evaluate_splits.cu.o
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+[ 98%] Building CUDA object tests/cpp/CMakeFiles/testxgboost.dir/tree/gpu_hist/test_gradient_based_sampler.cu.o
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+[ 98%] Building CUDA object tests/cpp/CMakeFiles/testxgboost.dir/tree/gpu_hist/test_histogram.cu.o
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+[ 98%] Building CUDA object tests/cpp/CMakeFiles/testxgboost.dir/tree/gpu_hist/test_row_partitioner.cu.o
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+[ 99%] Building CUDA object tests/cpp/CMakeFiles/testxgboost.dir/tree/test_constraints.cu.o
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+[ 99%] Building CUDA object tests/cpp/CMakeFiles/testxgboost.dir/tree/test_gpu_hist.cu.o
+nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+[100%] Building CXX object tests/cpp/CMakeFiles/testxgboost.dir/__/__/plugin/example/custom_obj.cc.o
+[100%] Linking CXX executable ../../testxgboost
+[100%] Built target testxgboost

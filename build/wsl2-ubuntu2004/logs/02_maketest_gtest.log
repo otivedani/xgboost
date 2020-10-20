@@ -1,0 +1,23 @@
+Running tests...
+Test project /home/otivedani/xgboost/build
+    Start 1: TestXGBoostLib
+1/6 Test #1: TestXGBoostLib ...................Child aborted***Exception:  63.11 sec
+    Start 2: TestXGBoostCLI
+2/6 Test #2: TestXGBoostCLI ...................   Passed    0.42 sec
+    Start 3: AllTestsInDMLCUnitTests
+3/6 Test #3: AllTestsInDMLCUnitTests ..........   Passed    6.83 sec
+    Start 4: lazy_recover
+4/6 Test #4: lazy_recover .....................   Passed    0.01 sec
+    Start 5: local_recover
+5/6 Test #5: local_recover ....................   Passed    0.01 sec
+    Start 6: model_recover
+6/6 Test #6: model_recover ....................   Passed    0.01 sec
+
+83% tests passed, 1 tests failed out of 6
+
+Total Test time (real) =  70.39 sec
+
+The following tests FAILED:
+	  1 - TestXGBoostLib (Child aborted)
+Errors while running CTest
+make: *** [Makefile:130: test] Error 8

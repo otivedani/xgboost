@@ -1,0 +1,115 @@
+-- The CXX compiler identification is GNU 9.3.0
+-- The C compiler identification is GNU 9.3.0
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- CMake version 3.16.3
+-- Performing Test XGBOOST_MM_PREFETCH_PRESENT
+-- Performing Test XGBOOST_MM_PREFETCH_PRESENT - Success
+-- Performing Test XGBOOST_BUILTIN_PREFETCH_PRESENT
+-- Performing Test XGBOOST_BUILTIN_PREFETCH_PRESENT - Success
+-- xgboost VERSION: 1.3.0
+-- Setting build type to 'Release' as none was specified.
+-- Configured CUDA host compiler: /usr/bin/c++
+-- The CUDA compiler identification is NVIDIA 11.1.74
+-- Check for working CUDA compiler: /usr/local/cuda-11.1/bin/nvcc
+-- Check for working CUDA compiler: /usr/local/cuda-11.1/bin/nvcc -- works
+-- Detecting CUDA compiler ABI info
+-- Detecting CUDA compiler ABI info - done
+-- CUDA GEN_CODE: --generate-code=arch=compute_35,code=sm_35;--generate-code=arch=compute_50,code=sm_50;--generate-code=arch=compute_52,code=sm_52;--generate-code=arch=compute_60,code=sm_60;--generate-code=arch=compute_61,code=sm_61;--generate-code=arch=compute_70,code=sm_70;--generate-code=arch=compute_75,code=sm_75;--generate-code=arch=compute_80,code=sm_80;--generate-code=arch=compute_80,code=compute_80;
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Found OpenMP_C: -fopenmp (found version "4.5") 
+-- Found OpenMP_CXX: -fopenmp (found version "4.5") 
+-- Found OpenMP: TRUE (found version "4.5")  
+-- Found OpenMP_C: -fopenmp (found version "4.5") 
+-- Found OpenMP_CXX: -fopenmp (found version "4.5") 
+-- Using nccl library: /usr/lib/x86_64-linux-gnu/libnccl_static.a
+-- Found Nccl: /usr/include  
+-- Looking for clock_gettime in rt
+-- Looking for clock_gettime in rt - found
+-- Looking for fopen64
+-- Looking for fopen64 - not found
+-- Looking for C++ include cxxabi.h
+-- Looking for C++ include cxxabi.h - found
+-- Looking for nanosleep
+-- Looking for nanosleep - found
+-- Looking for backtrace
+-- Looking for backtrace - found
+-- backtrace facility detected in default set of libraries
+-- Found Backtrace: /usr/include  
+-- Check if the system is big endian
+-- Searching 16 bit integer
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of unsigned short
+-- Check size of unsigned short - done
+-- Using unsigned short
+-- Check if the system is big endian - little endian
+-- /home/otivedani/xgboost/dmlc-core/cmake/build_config.h.in -> include/dmlc/build_config.h
+-- Performing Test SUPPORT_MSSE2
+-- Performing Test SUPPORT_MSSE2 - Success
+-- /home/otivedani/xgboost/dmlc-core/test/unittest/build_config.h.in -> /home/otivedani/xgboost/dmlc-core/test/unittest/build_config.h
+-- Could NOT find GTest (missing: GTEST_LIBRARY GTEST_INCLUDE_DIR GTEST_MAIN_LIBRARY) 
+-- GTest not found, downloading GTest.
+/home/otivedani/xgboost/dmlc-core/cmake/gtest_cmake.in -> /home/otivedani/xgboost/build/googletest-download/CMakeLists.txt
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/otivedani/xgboost/build/googletest-download
+Scanning dependencies of target googletest
+[ 11%] Creating directories for 'googletest'
+[ 22%] Performing download step (git clone) for 'googletest'
+Cloning into 'googletest-src'...
+Note: switching to 'release-1.10.0'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 703bd9ca Googletest export
+[ 33%] No patch step for 'googletest'
+[ 44%] Performing update step for 'googletest'
+[ 55%] No configure step for 'googletest'
+[ 66%] No build step for 'googletest'
+[ 77%] No install step for 'googletest'
+[ 88%] No test step for 'googletest'
+[100%] Completed 'googletest'
+[100%] Built target googletest
+-- Found PythonInterp: /usr/bin/python3.8 (found version "3.8.2") 
+-- Using nccl library: /usr/lib/x86_64-linux-gnu/libnccl_static.a
+-- Using nccl library: /usr/lib/x86_64-linux-gnu/libnccl_static.a
+-- Found CUDA: /usr/local/cuda-11.1 (found version "11.1") 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/otivedani/xgboost/build
